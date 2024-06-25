@@ -1,0 +1,196 @@
+.types {
+  @include adaptiveValue("padding-top", 125, 67);
+  @include adaptiveValue("padding-bottom", 114, 66);
+  background: linear-gradient(270deg, #272B30 0%, rgba(39, 43, 48, 0.39) 100%);
+
+  /* .types__container */
+  &__container {}
+
+  /* .types__title */
+  &__title {
+    @include adaptiveValue("margin-bottom", 29, 36);
+  }
+
+  /* .types__subtitle */
+  &__subtitle {
+    @include adaptiveValue("margin-bottom", 56, 38);
+  }
+
+  /* .types__items */
+  &__items {
+    display: grid;
+    // grid-template-columns: repeat(3, 1fr);
+    // grid-template-rows: repeat(2, 1fr);
+    // grid-template-columns: repeat(auto-fit, minmax(rem(350), 1fr));
+    @include adaptiveValue("gap", 30, 20);
+    justify-items: center;
+
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+
+
+    @media (max-width: em(1300)) {
+      //  column-gap: rem(10); 
+    }
+
+    @media (max-width:$mobile) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+    }
+
+  }
+
+  /* .types__item */
+  &__item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    @include adaptiveValue("gap", 33, 12);
+    text-align: center;
+
+    &_last {
+      align-self: center;
+      @include adaptiveValue("width", 446, 148);
+      height: 100%;
+
+      img {
+        @media (max-width:$mobileSmall) {
+          height: rem(110);
+        }
+      }
+    }
+
+    &:hover {
+      .types__image {
+        img {
+          // transform: perspective(300px) rotateY(15deg);
+          // transform: rotateX(var(--move-y)) rotateY(var(--move-x));
+          // will-change: transform;
+          // transition: transform $transition;
+        }
+      }
+    }
+  }
+
+  /* .types__image */
+  &__image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease 0s;
+
+    @media (any-hover: hover) {
+      &:hover {
+        transform: perspective(300px) rotateY(-2deg);
+
+        img {
+          transform: perspective(300px) rotateY(7deg);
+        }
+      }
+    }
+
+    &:not(:last-child) {
+      @include adaptiveValue("height", 253, 84);
+      @include adaptiveValue("width", 446, 148);
+      border-radius: rem(50);
+      background: linear-gradient(196deg, #196FC5 0%, #7F3F96 100%);
+
+      &::before {
+        content: '';
+        position: absolute;
+      }
+    }
+
+    img {
+      position: absolute;
+      transition: all 0.5s ease 0s;
+      filter: drop-shadow(3px 15px 25px #272B30);
+    }
+
+    &_offices {
+      img {
+        @include adaptiveValue("width", 336, 114);
+        top: 27%;
+      }
+    }
+
+    &_apartmens {
+      img {
+        @include adaptiveValue("width", 426, 144);
+        top: -22.9%;
+      }
+    }
+
+    &_hotel {
+      img {
+        @include adaptiveValue("width", 187, 63);
+      }
+    }
+
+    &_bach {
+      img {
+        @include adaptiveValue("width", 273, 91);
+      }
+    }
+
+    &_cars {
+      img {
+        @include adaptiveValue("width", 479, 165);
+        left: 4.2%;
+        top: -3%;
+      }
+    }
+  }
+
+  &__text-block {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include adaptiveValue("gap", 53, 20);
+    width: 100%;
+    height: 100%;
+    top: -11%;
+
+    text-align: center;
+
+    span {
+      display: block;
+    }
+  }
+
+  /* .types__name */
+  &__name,
+  .types__descr {
+    @include adaptiveValue("font-size", 18, 14);
+    color: #FFF;
+    font-weight: 700;
+    line-height: 120%;
+  }
+
+  /* .types__link */
+  &__link {
+    @include adaptiveValue("font-size", 14, 9, 1920, 767, 2);
+    justify-content: center;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    @media (max-width:$mobile) {
+      display: none;
+      font-size: rem(14);
+    }
+
+    &_null {
+      display: none;
+
+      @media (max-width:$mobile) {
+        display: flex;
+        grid-column: 2 span;
+        margin-top: rem(10);
+      }
+    }
+  }
+}

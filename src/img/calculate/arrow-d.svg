@@ -1,0 +1,15 @@
+<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="11.5" cy="11.5" r="11" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 23 23)"
+    stroke="#28333E" />
+  <path d="M15 10L11 14M7.70711 10L11.7071 14" stroke="#28333E" />
+</svg>
+
+
+
+
+
+
+<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="11.5" cy="11.5" r="11.5" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 23 23)" fill="#28333E"/>
+<path d="M15 10L11 14M7.70711 10L11.7071 14" stroke="white"/>
+</svg>

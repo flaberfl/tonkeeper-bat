@@ -1,0 +1,93 @@
+//<INPUT>
+// Сніппет (HTML): inp
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+textarea {
+	background: transparent;
+	border-radius: rem(10);
+	border: rem(1) solid #2C4A67;
+	width: 100%;
+	resize: none;
+
+	font-size: rem(14);
+	line-height: 120%;
+	font-weight: 500;
+	color: #fff;
+	letter-spacing: 1.4px;
+
+	@include adaptiveValue("padding-left", 37, 20);
+	@include adaptiveValue("padding-top", 29, 18);
+	height: rem(148);
+
+	@media (max-width:$mobile) {
+		height: rem(100);
+	}
+}
+
+.input {
+	@include adaptiveValue("height", 74, 50);
+	// max-width: rem(383);
+
+	border-radius: rem(10) !important;
+	display: block;
+	width: 100%;
+	// padding: 0 rem(9);
+	@include adaptiveValue("padding-left", 37, 20);
+	border: 1px solid #2C4A67;
+	background-color: transparent;
+
+	font-size: rem(14);
+	line-height: 120%;
+	font-weight: 500;
+	color: #fff;
+	letter-spacing: 1.4px;
+
+	&._form-focus {
+		border: 1px solid #fff;
+	}
+
+	&._form-error {}
+}
+
+.input[placeholder]:not([data-placeholder-nohiden]) {
+	&::placeholder {
+		transition: opacity 0.3s;
+	}
+
+	&:focus::placeholder {
+		opacity: 0;
+	}
+}
+
+textarea.input {
+	padding: 0px 0px;
+
+}
+
+textarea {
+	&:focus::placeholder {
+		opacity: 0;
+	}
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+input[type="number"]:hover,
+input[type="number"]:focus {
+	-moz-appearance: number-input;
+}

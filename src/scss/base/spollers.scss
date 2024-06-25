@@ -1,0 +1,94 @@
+.spollers {
+	display: grid;
+	gap: rem(12);
+}
+
+// Спойлер
+.spollers__item {
+	font-size: rem(20);
+}
+
+// Заголовок спойлера
+.spollers__title {
+	position: relative;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	@include adaptiveValue("padding-left", 91, 56);
+	@include adaptiveValue("padding-top", 26, 20);
+	@include adaptiveValue("padding-bottom", 26, 20);
+	@include adaptiveValue("padding-right", 15, 50);
+
+	border-radius: rem(10);
+	background: #28333E;
+	z-index: 30;
+	cursor: default;
+
+	@include adaptiveValue("font-size", 18, 14);
+	font-weight: 600;
+	color: #fff;
+	text-align: left;
+	line-height: 120%;
+
+
+	span {
+		position: relative;
+		z-index: 10;
+	}
+
+	._spoller-init & {
+		cursor: pointer;
+
+		&::before {
+			content: "";
+			position: absolute;
+			@include adaptiveValue("left", 35, 14);
+			width: rem(23);
+			height: rem(23);
+			background: url('@img/left-circle.svg') 0 0 no-repeat;
+
+			transform: rotate(-180deg);
+			transition: transform 0.5s ease 0s;
+			z-index: 2;
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border-radius: rem(10);
+			background: #6D2885;
+			z-index: 1;
+			opacity: 0;
+			transition: all 0.3s ease 0s;
+		}
+
+		&._spoller-active {
+			&::before {
+				transform: rotate(-90deg);
+			}
+
+			&::after {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+// Контент спойлера
+.spollers__body {
+
+	@include adaptiveValue("padding-top", 33, 22);
+	@include adaptiveValue("padding-bottom", 22, 20);
+
+	@include adaptiveValue("font-size", 18, 14);
+	line-height: 120%;
+
+	@media (min-width:$mobile) {
+		padding-left: rem(37);
+		padding-right: rem(20);
+	}
+}

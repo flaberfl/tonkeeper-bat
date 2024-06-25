@@ -1,0 +1,143 @@
+.prices {
+  position: relative;
+  @include adaptiveValue("padding-top", 128, 82);
+  @include adaptiveValue("padding-bottom", 140, 82);
+
+  &::before {
+    content: '';
+    position: absolute;
+    background: url('@img/prices-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    mix-blend-mode: darken;
+    z-index: -1;
+  }
+
+  /* .prices__container */
+  &__container {}
+
+  /* .prices__title */
+  &__title {
+    @include adaptiveValue("margin-bottom", 107, 42);
+  }
+
+  /* .prices__list */
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: rem(7) rem(8);
+    align-content: center;
+
+    @media (max-width: em(600)) {
+      row-gap: rem(3);
+    }
+  }
+
+  /* .prices__cell */
+  &__cell {
+    display: flex;
+    align-items: center;
+    min-height: rem(74);
+    @include adaptiveValue("padding-left", 37, 22);
+    padding-right: rem(15);
+    padding-top: rem(17);
+    padding-bottom: rem(17);
+
+    background: #28333E;
+
+    &:hover{
+      opacity: .5;
+    }
+
+    @media (max-width:$mobile) {
+      min-height: rem(61);
+    }
+  }
+
+  /* .prices__item */
+  &__item {}
+
+  /* .prices__name */
+  &__name {
+    grid-column: span 3;
+
+    font-size: rem(18);
+    line-height: 120%;
+
+    @media (max-width:$tablet) {
+      grid-column: span 6;
+
+      &_car {
+        margin-bottom: rem(12);
+      }
+    }
+
+    @media (max-width: em(600)) {
+      &_car {
+        margin-bottom: rem(0);
+      }
+    }
+
+    @media (max-width: em(600)) {
+      grid-column: span 12;
+    }
+  }
+
+  /* .prices__price */
+  &__price {
+    grid-column: span 3;
+
+    color: #00F0FF;
+
+    @media (max-width:$tablet) {
+      grid-column: span 6;
+
+      &_car {
+        margin-bottom: rem(12);
+      }
+    }
+
+    @media (max-width: em(600)) {
+      grid-column: span 12;
+    }
+  }
+
+  /* .prices__text */
+  &__text {
+    grid-column: span 6;
+
+    @media (max-width:$tablet) {
+      grid-column: span 12;
+
+      &:not(:last-child) {
+        margin-bottom: rem(12);
+      }
+    }
+
+    /* .prices__text_null */
+    &_null {
+      background: rgba(40, 51, 62, 0.50);
+
+      @media (max-width:$tablet) {
+        display: none;
+      }
+    }
+  }
+
+  /* .prices__date */
+  &__date {
+    grid-column: span 6;
+
+    @media (max-width:$tablet) {
+      grid-column: span 12;
+    }
+  }
+}

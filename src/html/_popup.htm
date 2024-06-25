@@ -1,0 +1,1129 @@
+<!-- <div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+				Text
+			</div>
+		</div>
+	</div>
+</div> -->
+
+<div id="quiz-popup-planes" aria-hidden="true" class="popup quiz-popup quiz-popup__planes popup_show1">
+	<div class="quiz-popup__wrapper popup__wrapper">
+		<div class="quiz-popup__content popup__content">
+			<button data-close type="button" class="popup__close">
+				<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+					<path d="M2 2L21 21M21.1716 2L2.17157 21" stroke="white" stroke-width="4" />
+				</svg>
+			</button>
+
+			<form class="form quiz-form quiz-form__planes quiz-form__container" action="#" data-dev
+				data-popup-message="#thanks-popup">
+
+				<div sub-visible class="quiz-form__header">
+					<h2 class="quiz-form__title title">calculate the cost</h2>
+					<h3 class="quiz-form__subtitle calculate__subtitle subtitle">If you need an urgent
+						check,
+						write to
+						us on
+						<span>
+							<a href="https://wa.me/13473008286" target="_blank">Whatsapp </a>
+						</span><i>+1 (347) 300-82-86</i> or <span><a
+								href="mailto:nyasfaria@gmail.com">nyasfaria@gmail.com</a></span>
+					</h3>
+				</div>
+
+				<div sub-hidden class="quiz-form__header" hidden>
+					<h2 class="quiz-form__title title">estimated cost of service $<span id="planes-price"></span></h2>
+					<h3 class="quiz-form__subtitle calculate__subtitle subtitle">
+						The final cost will be applied after the calculation by our operator before the start of work.
+					</h3>
+				</div>
+
+				<fieldset class="quiz-form__fieldset">
+
+					<div class="quiz-form__body">
+
+						<div class="quiz-form__item">
+							<div class="quiz-form__image calculate__image">
+								<img src="@img/calculate/planes.png" alt="Planes" class="calculate__img calculate__img_planes">
+								<div class="calculate__check">
+									<svg class="calculate__svg" width="23" height="23" viewBox="0 0 23 23" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<circle cx="11.5" cy="11.5" r="11" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 23 23)"
+											stroke="#28333E" />
+										<path d="M15 10L11 14M7.70711 10L11.7071 14" stroke="#28333E" />
+									</svg>
+								</div>
+							</div>
+							<div class="quiz-form__name">Plane</div>
+							<div class="quiz-popup__label">Type of check</div>
+						</div>
+
+						<div class="quiz-form__block">
+
+							<div class="quiz-form__options _def">
+								<span class="wpcf7-form-control wpcf7-radio">
+
+									<span class="wpcf7-list-item">
+										<label>
+											<input type="radio" name="check" value="Full check">
+											<span class="wpcf7-list-item-label">
+												Full check
+											</span>
+										</label>
+
+									</span>
+
+								</span>
+
+								<span class="wpcf7-form-control wpcf7-radio">
+
+									<span class="wpcf7-list-item">
+
+										<label>
+											<input id="check-minprice" type="radio" name="check" value="Checking the premises">
+											<span class="wpcf7-list-item-label">
+												Checking the premises
+											</span>
+										</label>
+
+									</span>
+
+								</span>
+
+							</div>
+						</div>
+
+						<div class="button__wrap quiz-form__buttons quiz-form__buttons_first">
+							<span>Find out the cost</span>
+							<button type="button" class="quiz-form__button button button_next"><span>Next</span>
+							</button>
+
+						</div>
+
+					</div>
+
+				</fieldset>
+
+				<fieldset class="quiz-form__fieldset">
+
+					<div class="quiz-form__body">
+
+						<div class="quiz-form__item">
+							<div class="quiz-form__image calculate__image">
+								<img src="@img/calculate/planes.png" alt="Planes" class="calculate__img calculate__img_planes">
+								<div class="calculate__check">
+									<svg class="calculate__svg" width="23" height="23" viewBox="0 0 23 23" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<circle cx="11.5" cy="11.5" r="11" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 23 23)"
+											stroke="#28333E" />
+										<path d="M15 10L11 14M7.70711 10L11.7071 14" stroke="#28333E" />
+									</svg>
+								</div>
+							</div>
+							<div class="quiz-form__name">Plane</div>
+
+						</div>
+
+						<div class="quiz-form__block quiz-form__block_swither">
+							<div class="quiz-form__line">
+								<label for="length" class="quiz-form__label quiz-form__label_rooms">Specify the length of the plane,
+									ft:</label>
+								<input id="answer" autocomplete="off" type="number" name="length" data-error="" placeholder=""
+									class="input quiz-form__input">
+
+							</div>
+						</div>
+
+
+						<div class="quiz-form__buttons">
+							<button type="button" class="quiz-form__button button button_back"><span>Back</span>
+							</button>
+							<div class="button__wrap">
+								<span>Find out the cost</span>
+								<button id="input-check" type="button" class="quiz-form__button button button_next"><span>Next</span>
+								</button>
+							</div>
+
+						</div>
+
+					</div>
+
+				</fieldset>
+
+				<fieldset class="quiz-form__fieldset quiz-form__fieldset_finish">
+
+					<div class="quiz-form__form">
+						<div class="form__line form__line_name">
+							<label class="form__label" for="name">Your Name*</label>
+							<input data-required="text" type="text" name="name" data-error="Type your name here"
+								data-placeholder="Type your name here" placeholder="Type your name here" class="input">
+						</div>
+						<div class="form__line form__line_tel">
+							<label class="form__label" for="tel">Phone Number*</label>
+							<input autocomplete="off" type="text" name="tel" data-required="number" data-placeholder="(___) ___-__-__"
+								placeholder="(___) ___-__-__" class="input">
+							<div class="code-select">
+								<select class="wpcf7-form-control wpcf7-select" aria-invalid="false" name="menu-91">
+									<option value="+1">+1</option>
+									<option value="+7">+7</option>
+									<option value="+380">+380</option>
+									<option value="+20">+20</option>
+								</select>
+							</div>
+						</div>
+						<div class="form__line form__line_mail">
+							<label class="form__label" for="name">Your Email*</label>
+							<input data-required="text" type="text" name="mail" data-error="Type your Email here"
+								data-placeholder="Type your Email here" placeholder="Type your Email here" class="input">
+						</div>
+
+						<div class="form__line form__line_send">
+
+
+							<!-- <label class="checkbox checkbox_cf7">
+
+								<span class="wpcf7-form-control wpcf7-acceptance">
+									<span class="wpcf7-list-item">
+										<input type="checkbox" name="accept" value="1" class="checkbox__input checkbox-real__input"
+											id="accept" aria-invalid="false">
+										<span>
+
+										</span>
+									</span>
+								</span>
+
+								<span class="checkbox__text checkbox__text_subm">I agree with <a href="#!">the privacy
+										policy</a>
+								</span>
+
+							</label> -->
+
+							<div class="checkbox">
+								<input id="c_2" data-error="Нет подтверждения" class="checkbox__input not-input" type="checkbox"
+									value="1" name="checkbox" checked>
+								<label for="c_2" class="checkbox__label"><span class="checkbox__text">I agree with <a href="#!"
+											data-popup="policy-popup">the
+											privacy policy</a></span></label>
+							</div>
+
+							<button id="b_2" type="submit" class="feedback__button button"><span>Submit</span></button>
+						</div>
+
+					</div>
+
+					<div class="quiz-form__buttons quiz-form__buttons_half">
+						<button type="button" class="quiz-form__button button button_back"><span>Back</span>
+						</button>
+						<div class="button__wrap">
+							<h3 class="quiz-form__subtitle calculate__subtitle subtitle"><span>or</span>Write to
+								us on
+								<span>
+									<a href="https://wa.me/13473008286" target="_blank">Whatsapp </a>
+								</span><i>+1 (347) 300-82-86</i> or <span><a
+										href="mailto:nyasfaria@gmail.com">nyasfaria@gmail.com</a></span>
+							</h3>
+						</div>
+
+					</div>
+
+
+
+				</fieldset>
+
+				<div class="quiz-form__footer">
+					<div class="quiz-form__footer-wrap">
+						<a href="#" data-popup="#policy-popup" class="footer__policy">Privacy policy</a>
+						<p class="footer__copyright">All rights reserved © 2023</p>
+					</div>
+
+					<div class="footer__logo">
+						<span>Website developed</span>
+						<a href="https://afreeca.ru/?utm_source=buyrent.ge" target="_blank">
+							<img src="@img/icons/logo-designer.svg" alt="Лототип разработчика макета">
+						</a>
+					</div>
+
+				</div>
+
+			</form>
+		</div>
+	</div>
+</div>
+
+<div id="quiz-popup-yachts" aria-hidden="true" class="popup quiz-popup quiz-popup__planes popup_show1">
+	<div class="quiz-popup__wrapper popup__wrapper">
+		<div class="quiz-popup__content popup__content">
+			<button data-close type="button" class="popup__close">
+				<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+					<path d="M2 2L21 21M21.1716 2L2.17157 21" stroke="white" stroke-width="4" />
+				</svg>
+			</button>
+
+			<form class="form quiz-form quiz-form__yachts quiz-form__container" action="#" method="POST" data-dev
+				data-popup-message="#quiz-thanks-popup">
+
+				<div sub-visible class="quiz-form__header">
+					<h2 class="quiz-form__title title">calculate the cost</h2>
+					<h3 class="quiz-form__subtitle calculate__subtitle subtitle">If you need an urgent
+						check,
+						write to
+						us on
+						<span>
+							<a href="https://wa.me/13473008286" target="_blank">Whatsapp </a>
+						</span><i>+1 (347) 300-82-86</i> or <span><a
+								href="mailto:nyasfaria@gmail.com">nyasfaria@gmail.com</a></span>
+					</h3>
+				</div>
+
+				<div sub-hidden class="quiz-form__header" hidden>
+					<h2 class="quiz-form__title title">estimated cost of service $<span id="yachts-price"></span></h2>
+					<h3 class="quiz-form__subtitle calculate__subtitle subtitle">
+						The final cost will be applied after the calculation by our operator before the start of work.
+					</h3>
+				</div>
+
+				<fieldset class="quiz-form__fieldset">
+
+					<div class="quiz-form__body">
+
+						<div class="quiz-form__item">
+							<div class="quiz-form__image calculate__image">
+								<img src="@img/calculate/yachts.png" alt="Yachts" class="calculate__img calculate__img_yachts">
+								<div class="calculate__check">
+									<svg class="calculate__svg" width="23" height="23" viewBox="0 0 23 23" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<circle cx="11.5" cy="11.5" r="11" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 23 23)"
+											stroke="#28333E" />
+										<path d="M15 10L11 14M7.70711 10L11.7071 14" stroke="#28333E" />
+									</svg>
+								</div>
+							</div>
+							<div class="calculate__name">Yachts</div>
+							<div class="quiz-popup__label">Type of check</div>
+						</div>
+
+						<div class="quiz-form__block">
+
+							<div class="quiz-form__options _def">
+								<span class="wpcf7-form-control wpcf7-radio">
+
+									<span class="wpcf7-list-item">
+										<label>
+											<input type="radio" name="check" value="Full check">
+											<span class="wpcf7-list-item-label">
+												Full check
+											</span>
+										</label>
+
+									</span>
+
+								</span>
+
+								<span class="wpcf7-form-control wpcf7-radio">
+
+									<span class="wpcf7-list-item">
+
+										<label>
+											<input id="check-minprice2" type="radio" name="check" value="Checking the premises">
+											<span class="wpcf7-list-item-label">
+												Checking the premises
+											</span>
+										</label>
+
+									</span>
+
+								</span>
+
+							</div>
+						</div>
+
+
+						<div class="button__wrap quiz-form__buttons quiz-form__buttons_first">
+							<span>Find out the cost</span>
+							<button type="button" class="quiz-form__button button button_next"><span>Next</span>
+							</button>
+
+						</div>
+
+					</div>
+
+				</fieldset>
+
+				<fieldset class="quiz-form__fieldset quiz-form__fieldset_2">
+
+					<div class="quiz-form__body">
+
+						<div class="quiz-form__item">
+							<div class="quiz-form__image calculate__image">
+								<img src="@img/calculate/yachts.png" alt="Yachts" class="calculate__img calculate__img_yachts">
+								<div class="calculate__check">
+									<svg class="calculate__svg" width="23" height="23" viewBox="0 0 23 23" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<circle cx="11.5" cy="11.5" r="11" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 23 23)"
+											stroke="#28333E" />
+										<path d="M15 10L11 14M7.70711 10L11.7071 14" stroke="#28333E" />
+									</svg>
+								</div>
+							</div>
+							<div class="calculate__name">Yachts</div>
+						</div>
+
+						<div class="quiz-form__block quiz-form__block_swither">
+							<div class="quiz-form__line">
+								<label for="length" class="quiz-form__label quiz-form__label_rooms">Specify the length of the plane,
+									ft:</label>
+								<input id="answer2" autocomplete="off" type="number" name="length" data-error="" placeholder=""
+									class="input quiz-form__input">
+
+							</div>
+
+							<!-- Пришлось удалить переключатель, который сооружал сам (( -->
+
+							<!-- <div class="quiz-form__options _swither">
+								<span class="wpcf7-form-control wpcf7-radio">
+
+									<span class="wpcf7-list-item">
+										<label>
+											<input class="not-input" id="units-ft" type="radio" name="units" value="ft" checked>
+											<span class="wpcf7-list-item-label">
+												ft
+											</span>
+										</label>
+
+									</span>
+
+								</span>
+
+								<span class="wpcf7-form-control wpcf7-radio wpcf7-radio-m">
+
+									<span class="wpcf7-list-item">
+
+										<label>
+											<input class="not-input" id="units-m" type="radio" name="units" value="m">
+											<span class="wpcf7-list-item-label">
+												m
+											</span>
+										</label>
+
+									</span>
+
+								</span>
+
+							</div> -->
+
+						</div>
+
+
+						<div class="quiz-form__buttons">
+							<button type="button" class="quiz-form__button button button_back"><span>Back</span>
+							</button>
+							<div class="button__wrap">
+								<span>Find out the cost</span>
+								<button id="input-check2" type="button" class="quiz-form__button button button_next"><span>Next</span>
+								</button>
+							</div>
+
+						</div>
+
+					</div>
+
+				</fieldset>
+
+				<fieldset
+					class="quiz-form__fieldset quiz-form__fieldset_2 quiz-form__fieldset_finish quiz-form__fieldset_finish_2">
+
+					<div class="quiz-form__form">
+						<div class="form__line form__line_name">
+							<label class="form__label" for="name">Your Name*</label>
+							<input data-required="text" type="text" name="name" data-error="Type your name here"
+								data-placeholder="Type your name here" placeholder="Type your name here" class="input">
+						</div>
+						<div class="form__line form__line_tel">
+							<label class="form__label" for="tel">Phone Number*</label>
+							<input autocomplete="off" type="text" name="tel" data-required="number" data-placeholder="(___) ___-__-__"
+								placeholder="(___) ___-__-__" class="input">
+							<div class="code-select">
+								<select class="wpcf7-form-control wpcf7-select" aria-invalid="false" name="menu-91">
+									<option value="+1">+1</option>
+									<option value="+7">+7</option>
+									<option value="+380">+380</option>
+									<option value="+20">+20</option>
+								</select>
+							</div>
+						</div>
+						<div class="form__line form__line_mail">
+							<label class="form__label" for="name">Your Email*</label>
+							<input data-required="text" type="text" name="mail" data-error="Type your Email here"
+								data-placeholder="Type your Email here" placeholder="Type your Email here" class="input">
+						</div>
+
+						<div class="form__line form__line_send">
+
+
+							<!-- <label class="checkbox checkbox_cf7">
+
+								<span class="wpcf7-form-control wpcf7-acceptance">
+									<span class="wpcf7-list-item">
+										<input type="checkbox" name="accept" value="1" class="checkbox__input checkbox-real__input"
+											id="accept" aria-invalid="false">
+										<span>
+
+										</span>
+									</span>
+								</span>
+
+								<span class="checkbox__text checkbox__text_subm">I agree with <a href="#!">the privacy
+										policy</a>
+								</span>
+
+							</label> -->
+
+							<div class="checkbox">
+								<input id="c_3" data-error="Нет подтверждения" class="checkbox__input not-input" type="checkbox"
+									value="1" name="checkbox" checked>
+								<label for="c_3" class="checkbox__label"><span class="checkbox__text">I agree with <a href="#!"
+											data-popup="#policy-popup">the
+											privacy policy</a></span></label>
+							</div>
+
+							<button id="b_3" type="submit" class="feedback__button button"><span>Submit</span></button>
+						</div>
+
+					</div>
+
+					<div class="quiz-form__buttons quiz-form__buttons_half">
+						<button type="button" class="quiz-form__button button button_back"><span>Back</span>
+						</button>
+						<div class="button__wrap">
+							<h3 class="quiz-form__subtitle calculate__subtitle subtitle"><span>or</span>Write to
+								us on
+								<span>
+									<a href="https://wa.me/13473008286" target="_blank">Whatsapp </a>
+								</span><i>+1 (347) 300-82-86</i> or <span><a
+										href="mailto:nyasfaria@gmail.com">nyasfaria@gmail.com</a></span>
+							</h3>
+						</div>
+
+					</div>
+
+
+
+				</fieldset>
+
+				<div class="quiz-form__footer">
+					<div class="quiz-form__footer-wrap">
+						<a href="#" data-popup="#policy-popup" class="footer__policy">Privacy policy</a>
+						<p class="footer__copyright">All rights reserved © 2023</p>
+					</div>
+
+					<div class="footer__logo">
+						<span>Website developed</span>
+						<a href="https://afreeca.ru/?utm_source=buyrent.ge" target="_blank">
+							<img src="@img/icons/logo-designer.svg" alt="Лототип разработчика макета">
+						</a>
+					</div>
+
+				</div>
+
+			</form>
+		</div>
+	</div>
+</div>
+
+<div id="quiz-popup-offices" aria-hidden="true" class="popup quiz-popup quiz-popup__offices popup_show1">
+	<div class="quiz-popup__wrapper popup__wrapper">
+		<div class="quiz-popup__content popup__content">
+			<button data-close type="button" class="popup__close">
+				<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+					<path d="M2 2L21 21M21.1716 2L2.17157 21" stroke="white" stroke-width="4" />
+				</svg>
+			</button>
+
+			<form class="form quiz-form quiz-form__offices quiz-form__container" action="#" method="POST" data-dev
+				data-popup-message="#quiz-thanks-popup">
+
+				<div sub-visible class="quiz-form__header">
+					<h2 class="quiz-form__title title">calculate the cost</h2>
+					<h3 class="quiz-form__subtitle calculate__subtitle subtitle">If you need an urgent
+						check,
+						write to
+						us on
+						<span>
+							<a href="https://wa.me/13473008286" target="_blank">Whatsapp </a>
+						</span><i>+1 (347) 300-82-86</i> or <span><a
+								href="mailto:nyasfaria@gmail.com">nyasfaria@gmail.com</a></span>
+					</h3>
+				</div>
+
+				<div sub-hidden class="quiz-form__header" hidden>
+					<input id="input-plan" name="price" hidden>
+					<h2 class="quiz-form__title title">estimated cost of service $<span id="office-price"></span></h2>
+					<h3 class="quiz-form__subtitle calculate__subtitle subtitle">
+						The final cost will be applied after the calculation by our operator before the start of work.
+					</h3>
+				</div>
+				<fieldset class="quiz-form__fieldset _active">
+
+					<div class="quiz-form__body">
+
+						<div class="quiz-form__item">
+							<div class="quiz-form__image calculate__image">
+								<img src="@img/calculate/office.png" alt="Office" class="calculate__img calculate__img_office">
+								<div class="calculate__check">
+									<svg class="calculate__svg" width="23" height="23" viewBox="0 0 23 23" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<circle cx="11.5" cy="11.5" r="11" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 23 23)"
+											stroke="#28333E" />
+										<path d="M15 10L11 14M7.70711 10L11.7071 14" stroke="#28333E" />
+									</svg>
+								</div>
+							</div>
+							<div class="quiz-form__name">Offices</div>
+
+						</div>
+
+						<div class="quiz-form__block quiz-form__block_swither">
+							<div class="quiz-form__line">
+								<label for="area" class="quiz-form__label">Area of the room in sq.ft.:</label>
+								<input id="answer3" autocomplete="off" type="number" name="area" data-error="" placeholder=""
+									class="input quiz-form__input">
+
+							</div>
+
+						</div>
+
+						<div class="button__wrap quiz-form__buttons quiz-form__buttons_first">
+							<span>Find out the cost</span>
+							<button id="input-check3" type="button" class="quiz-form__button button button_next"><span>Next</span>
+							</button>
+
+						</div>
+
+					</div>
+
+				</fieldset>
+
+				<fieldset class="quiz-form__fieldset quiz-form__fieldset_finish">
+
+					<div class="quiz-form__form">
+						<div class="form__line form__line_name">
+							<label class="form__label" for="name">Your Name*</label>
+							<input data-required="text" type="text" name="name" data-error="Type your name here"
+								data-placeholder="Type your name here" placeholder="Type your name here" class="input">
+						</div>
+						<div class="form__line form__line_tel">
+							<label class="form__label" for="tel">Phone Number*</label>
+							<input autocomplete="off" type="text" name="tel" data-required="number" data-placeholder="(___) ___-__-__"
+								placeholder="(___) ___-__-__" class="input">
+							<div class="code-select">
+								<select class="wpcf7-form-control wpcf7-select" aria-invalid="false" name="menu-91">
+									<option value="+1">+1</option>
+									<option value="+7">+7</option>
+									<option value="+380">+380</option>
+									<option value="+20">+20</option>
+								</select>
+							</div>
+						</div>
+						<div class="form__line form__line_mail">
+							<label class="form__label" for="name">Your Email*</label>
+							<input data-required="text" type="text" name="mail" data-error="Type your Email here"
+								data-placeholder="Type your Email here" placeholder="Type your Email here" class="input">
+						</div>
+
+						<div class="form__line form__line_send">
+
+
+							<!-- <label class="checkbox checkbox_cf7">
+
+								<span class="wpcf7-form-control wpcf7-acceptance">
+									<span class="wpcf7-list-item">
+										<input type="checkbox" name="accept" value="1" class="checkbox__input checkbox-real__input"
+											id="accept" aria-invalid="false">
+										<span>
+
+										</span>
+									</span>
+								</span>
+
+								<span class="checkbox__text checkbox__text_subm">I agree with <a href="#!">the privacy
+										policy</a>
+								</span>
+
+							</label> -->
+
+							<div class="checkbox">
+								<input id="c_4" data-error="Нет подтверждения" class="checkbox__input not-input" type="checkbox"
+									value="1" name="checkbox">
+								<label for="c_4" class="checkbox__label"><span class="checkbox__text">I agree with <a href="#!"
+											data-popup="#policy-popup">the
+											privacy policy</a></span></label>
+							</div>
+
+							<button id="b_4" type="submit" class="feedback__button button" disabled><span>Submit</span></button>
+						</div>
+
+					</div>
+
+					<div class="quiz-form__buttons quiz-form__buttons_half">
+						<button type="button" class="quiz-form__button button button_back"><span>Back</span>
+						</button>
+						<div class="button__wrap">
+							<h3 class="quiz-form__subtitle calculate__subtitle subtitle"><span>or</span>Write to
+								us on
+								<span>
+									<a href="https://wa.me/13473008286" target="_blank">Whatsapp </a>
+								</span><i>+1 (347) 300-82-86</i> or <span><a
+										href="mailto:nyasfaria@gmail.com">nyasfaria@gmail.com</a></span>
+							</h3>
+						</div>
+
+					</div>
+
+				</fieldset>
+
+				<div class="quiz-form__footer">
+					<div class="quiz-form__footer-wrap">
+						<a href="#" data-popup="#policy-popup" class="footer__policy">Privacy policy</a>
+						<p class="footer__copyright">All rights reserved © 2023</p>
+					</div>
+
+					<div class="footer__logo">
+						<span>Website developed</span>
+						<a href="https://afreeca.ru/?utm_source=buyrent.ge" target="_blank">
+							<img src="@img/icons/logo-designer.svg" alt="Лототип разработчика макета">
+						</a>
+					</div>
+
+				</div>
+
+			</form>
+		</div>
+	</div>
+</div>
+
+<div id="quiz-popup-apartments" aria-hidden="true" class="popup quiz-popup quiz-popup__apartments popup_show1">
+	<div class="quiz-popup__wrapper popup__wrapper">
+		<div class="quiz-popup__content popup__content">
+			<button data-close type="button" class="popup__close">
+				<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+					<path d="M2 2L21 21M21.1716 2L2.17157 21" stroke="white" stroke-width="4" />
+				</svg>
+			</button>
+
+			<form class="form quiz-form quiz-form__apartments quiz-form__container" action="#" method="POST" data-dev
+				data-popup-message="#quiz-thanks-popup">
+
+				<div sub-visible class="quiz-form__header">
+					<h2 class="quiz-form__title title">calculate the cost</h2>
+					<h3 class="quiz-form__subtitle calculate__subtitle subtitle">If you need an urgent
+						check,
+						write to
+						us on
+						<span>
+							<a href="https://wa.me/13473008286" target="_blank">Whatsapp </a>
+						</span><i>+1 (347) 300-82-86</i> or <span><a
+								href="mailto:nyasfaria@gmail.com">nyasfaria@gmail.com</a></span>
+					</h3>
+				</div>
+
+				<div sub-hidden class="quiz-form__header" hidden>
+					<h2 class="quiz-form__title title">estimated cost of service $<span id="apartments-price"></span></h2>
+					<h3 class="quiz-form__subtitle calculate__subtitle subtitle">
+						The final cost will be applied after the calculation by our operator before the start of work.
+					</h3>
+				</div>
+
+				<fieldset class="quiz-form__fieldset _active">
+
+					<div class="quiz-form__body">
+
+						<div class="quiz-form__item">
+							<div class="quiz-form__image calculate__image calculate__image_apartments">
+								<img src="@img/calculate/apartments.png" alt="Apartments and Houses"
+									class="calculate__img  calculate__img_apartments">
+								<div class="calculate__check">
+									<svg class="calculate__svg" width="23" height="23" viewBox="0 0 23 23" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<circle cx="11.5" cy="11.5" r="11" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 23 23)"
+											stroke="#28333E" />
+										<path d="M15 10L11 14M7.70711 10L11.7071 14" stroke="#28333E" />
+									</svg>
+								</div>
+							</div>
+							<div class="calculate__name">Apartments <br> and Houses</div>
+
+						</div>
+
+						<div class="quiz-form__block quiz-form__block_swither">
+							<div class="quiz-form__line">
+								<label for="area" class="quiz-form__label">Area of the room in sq.ft.:</label>
+								<input id="answer4" autocomplete="off" type="number" name="area" data-error="" placeholder=""
+									class="input quiz-form__input">
+
+							</div>
+
+							<!-- <div class="quiz-form__options _swither">
+								<span class="wpcf7-form-control wpcf7-radio">
+
+									<span class="wpcf7-list-item">
+										<label>
+											<input class="not-input" id="units-ft" type="radio" name="units" value="ft" checked>
+											<span class="wpcf7-list-item-label">
+												ft
+											</span>
+										</label>
+
+									</span>
+
+								</span>
+
+								<span class="wpcf7-form-control wpcf7-radio wpcf7-radio-m">
+
+									<span class="wpcf7-list-item">
+
+										<label>
+											<input class="not-input" id="units-m" type="radio" name="units" value="m">
+											<span class="wpcf7-list-item-label">
+												m
+											</span>
+										</label>
+
+									</span>
+
+								</span>
+
+							</div> -->
+
+						</div>
+
+						<div class="button__wrap quiz-form__buttons quiz-form__buttons_first">
+							<span>Find out the cost</span>
+							<button id="input-check4" type="button" class="quiz-form__button button button_next"><span>Next</span>
+							</button>
+
+						</div>
+
+					</div>
+
+				</fieldset>
+
+				<fieldset class="quiz-form__fieldset quiz-form__fieldset_finish">
+
+					<div class="quiz-form__form">
+						<div class="form__line form__line_name">
+							<label class="form__label" for="name">Your Name*</label>
+							<input data-required="text" type="text" name="name" data-error="Type your name here"
+								data-placeholder="Type your name here" placeholder="Type your name here" class="input">
+						</div>
+						<div class="form__line form__line_tel">
+							<label class="form__label" for="tel">Phone Number*</label>
+							<input autocomplete="off" type="text" name="tel" data-required="number" data-placeholder="(___) ___-__-__"
+								placeholder="(___) ___-__-__" class="input">
+							<div class="code-select">
+								<select class="wpcf7-form-control wpcf7-select" aria-invalid="false" name="menu-91">
+									<option value="+1">+1</option>
+									<option value="+7">+7</option>
+									<option value="+380">+380</option>
+									<option value="+20">+20</option>
+								</select>
+							</div>
+						</div>
+						<div class="form__line form__line_mail">
+							<label class="form__label" for="name">Your Email*</label>
+							<input data-required="text" type="text" name="mail" data-error="Type your Email here"
+								data-placeholder="Type your Email here" placeholder="Type your Email here" class="input">
+						</div>
+
+						<div class="form__line form__line_send">
+
+
+							<!-- <label class="checkbox checkbox_cf7">
+
+								<span class="wpcf7-form-control wpcf7-acceptance">
+									<span class="wpcf7-list-item">
+										<input type="checkbox" name="accept" value="1" class="checkbox__input checkbox-real__input"
+											id="accept" aria-invalid="false">
+										<span>
+
+										</span>
+									</span>
+								</span>
+
+								<span class="checkbox__text checkbox__text_subm">I agree with <a href="#!">the privacy
+										policy</a>
+								</span>
+
+							</label> -->
+
+							<div class="checkbox">
+								<input id="c_5" data-error="Нет подтверждения" class="checkbox__input not-input" type="checkbox"
+									value="1" name="checkbox" checked>
+								<label for="c_5" class="checkbox__label"><span class="checkbox__text">I agree with <a href="#!"
+											data-popup="#policy-popup">the
+											privacy policy</a></span></label>
+							</div>
+
+							<button id="b_5" type="submit" class="feedback__button button"><span>Submit</span></button>
+						</div>
+
+					</div>
+
+					<div class="quiz-form__buttons quiz-form__buttons_half">
+						<button type="button" class="quiz-form__button button button_back"><span>Back</span>
+						</button>
+						<div class="button__wrap">
+							<h3 class="quiz-form__subtitle calculate__subtitle subtitle"><span>or</span>Write to
+								us on
+								<span>
+									<a href="https://wa.me/13473008286" target="_blank">Whatsapp </a>
+								</span><i>+1 (347) 300-82-86</i> or <span><a
+										href="mailto:nyasfaria@gmail.com">nyasfaria@gmail.com</a></span>
+							</h3>
+						</div>
+
+					</div>
+
+				</fieldset>
+
+				<div class="quiz-form__footer">
+					<div class="quiz-form__footer-wrap">
+						<a href="#" data-popup="#policy-popup" class="footer__policy">Privacy policy</a>
+						<p class="footer__copyright">All rights reserved © 2023</p>
+					</div>
+
+					<div class="footer__logo">
+						<span>Website developed</span>
+						<a href="https://afreeca.ru/?utm_source=buyrent.ge" target="_blank">
+							<img src="@img/icons/logo-designer.svg" alt="Лототип разработчика макета">
+						</a>
+					</div>
+
+				</div>
+
+			</form>
+		</div>
+	</div>
+</div>
+
+<div id="quiz-popup-cars" aria-hidden="true" class="popup quiz-popup quiz-popup__cars popup_show1">
+	<div class="quiz-popup__wrapper popup__wrapper">
+		<div class="quiz-popup__content popup__content">
+			<button data-close type="button" class="popup__close">
+				<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+					<path d="M2 2L21 21M21.1716 2L2.17157 21" stroke="white" stroke-width="4" />
+				</svg>
+			</button>
+
+			<form class="form quiz-form quiz-form__container" action="#" method="POST" data-dev
+				data-popup-message="#quiz-thanks-popup">
+
+				<div class="quiz-form__header">
+					<h2 class="quiz-form__title title">estimated cost of service $1600</h2>
+					<h3 class="quiz-form__subtitle calculate__subtitle subtitle">
+						The final cost will be applied after the calculation by our operator before the start of work.
+					</h3>
+				</div>
+
+				<fieldset class="quiz-form__fieldset _active">
+
+					<div class="quiz-form__form">
+						<div class="form__line form__line_name">
+							<label class="form__label" for="name">Your Name*</label>
+							<input data-required="text" type="text" name="name" data-error="Type your name here"
+								data-placeholder="Type your name here" placeholder="Type your name here" class="input">
+						</div>
+						<div class="form__line form__line_tel">
+							<label class="form__label" for="tel">Phone Number*</label>
+							<input autocomplete="off" type="text" name="tel"
+								data-required="number" data-placeholder="(___) ___-__-__" placeholder="(___) ___-__-__" class="input">
+								<div class="code-select">
+									<select class="wpcf7-form-control wpcf7-select" aria-invalid="false" name="menu-91">
+										<option value="+1">+1</option>
+										<option value="+7">+7</option>
+										<option value="+380">+380</option>
+										<option value="+20">+20</option>
+									</select>
+								</div>
+						</div>
+						<div class="form__line form__line_mail">
+							<label class="form__label" for="name">Your Email*</label>
+							<input data-required="text" type="text" name="mail" data-error="Type your Email here"
+								data-placeholder="Type your Email here" placeholder="Type your Email here" class="input">
+						</div>
+
+						<div class="form__line form__line_send">
+
+
+							<!-- <label class="checkbox checkbox_cf7">
+
+								<span class="wpcf7-form-control wpcf7-acceptance">
+									<span class="wpcf7-list-item">
+										<input type="checkbox" name="accept" value="1" class="checkbox__input checkbox-real__input"
+											id="accept" aria-invalid="false">
+										<span>
+
+										</span>
+									</span>
+								</span>
+
+								<span class="checkbox__text checkbox__text_subm">I agree with <a href="#!">the privacy
+										policy</a>
+								</span>
+
+							</label> -->
+
+							<div class="checkbox">
+								<input id="c_6" data-error="Нет подтверждения" class="checkbox__input not-input" type="checkbox"
+									value="1" name="checkbox" checked>
+								<label for="c_6" class="checkbox__label"><span class="checkbox__text">I agree with <a href="#!"
+											data-popup="#policy-popup">the
+											privacy policy</a></span></label>
+							</div>
+
+							<button id="b_6" type="submit" class="feedback__button button"><span>Submit</span></button>
+						</div>
+
+					</div>
+
+					<div class="quiz-form__buttons quiz-form__buttons_half">
+						<div class="button__wrap">
+							<h3 class="quiz-form__subtitle calculate__subtitle subtitle"><span>or</span>Write to
+								us on
+								<span>
+									<a href="https://wa.me/13473008286" target="_blank">Whatsapp </a>
+								</span><i>+1 (347) 300-82-86</i> or <span><a
+										href="mailto:nyasfaria@gmail.com">nyasfaria@gmail.com</a></span>
+							</h3>
+						</div>
+
+					</div>
+
+
+
+				</fieldset>
+
+				<div class="quiz-form__footer">
+					<div class="quiz-form__footer-wrap">
+						<a href="#" data-popup="#policy-popup" class="footer__policy">Privacy policy</a>
+						<p class="footer__copyright">All rights reserved © 2023</p>
+					</div>
+
+					<div class="footer__logo">
+						<span>Website developed</span>
+						<a href="https://afreeca.ru/?utm_source=buyrent.ge" target="_blank">
+							<img src="@img/icons/logo-designer.svg" alt="Лототип разработчика макета">
+						</a>
+					</div>
+
+				</div>
+
+			</form>
+		</div>
+	</div>
+</div>
+
+<div id="quiz-thanks-popup" aria-hidden="true" class="popup thanks-popup popup_show1">
+	<div class="thanks-popup__wrapper popup__wrapper">
+		<div class="thanks-popup__content popup__content">
+			<button data-close type="button" class="popup__close">
+				<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+					<path d="M2 2L21 21M21.1716 2L2.17157 21" stroke="white" stroke-width="4" />
+				</svg>
+			</button>
+			<div class="thanks-popup__body">
+				<div class="thanks-popup__header">
+					<h2 class="thanks-popup__title title">thank you for your trust</h2>
+					<h3 class="thanks-popup__subtitle subtitle">Our managers will contact
+						you shortly</h3>
+				</div>
+				<img class="thanks-popup__image" src="@img/popup-th.png" alt="Картинка благодарности">
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="policy-popup" aria-hidden="true" class="popup policy-popup popup_show1">
+	<div class="policy-popup__wrapper popup__wrapper">
+		<div class="policy-popup__content popup__content">
+			<button data-close type="button" class="popup__close">
+				<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+					<path d="M2 2L21 21M21.1716 2L2.17157 21" stroke="white" stroke-width="4" />
+				</svg>
+			</button>
+			<div class="policy-popup__body">
+
+				<h2 class="policy-popup__title">Privacy policy</h2>
+
+				<div class="policy-popup__text">
+					<p>
+						1.1. We do not collect your personal data using the Site.
+					</p>
+					<p>
+						1.2. All data collected on the Site is provided and received in an anonymized form (hereinafter referred to
+						as
+						“Anonymous Data”).
+					</p>
+					<p>
+						1.3. Anonymous data includes the following information that does not identify you:
+					</p>
+
+					<p>
+						1.3.1. Information that you provide about yourself on your own using online forms and program modules of the
+						Site, including name and phone number and / or email address.
+					</p>
+
+					<p>
+						1.3.2. Data that is transferred in an anonymized form in automatic mode, depending on the settings of the
+						software you use.
+					</p>
+
+					<p>
+						1.4. The Administration has the right to establish requirements for the composition of the Impersonal User
+						Data that is collected using the Site.
+					</p>
+
+					<p>
+						1.5. If certain information is not marked as mandatory, its provision or disclosure is at the discretion of
+						the User. At the same time, you give informed consent to the access of an unlimited number of persons to
+						such
+						data. The specified data becomes publicly available from the moment it is provided and / or disclosed in
+						another form.
+					</p>
+
+					<p>
+						1.6. The Administration does not verify the accuracy of the data provided and whether the User has the
+						necessary consent to their processing in accordance with this Policy, believing that the User acts in good
+						faith, prudently and makes every effort to keep such information up to date and obtain all necessary
+						consents
+						to its use.
+					</p>
+
+					<p>
+						1.7. You acknowledge and accept the possibility of using third-party software on the Site, as a result of
+						which such parties can receive and transmit the data specified in clause 1.3 in an anonymized form.
+					</p>
+
+					<p>
+						1.8. The composition and conditions for collecting anonymized data using third-party software are determined
+						directly by their copyright holders and may include:
+
+						browser data (type, version, cookie);
+						device data and its location;
+						operating system data (type, version, screen resolution);
+						request data (time, referral source, IP address).
+					</p>
+
+					<p>
+						1.9. The Administration is not responsible for the procedure for using the Anonymized User Data by third
+						parties.
+					</p>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

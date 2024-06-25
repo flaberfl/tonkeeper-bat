@@ -1,0 +1,87 @@
+.feedback {
+  @include adaptiveValue("padding-top", 122, 55);
+  @include adaptiveValue("padding-bottom", 118, 78);
+
+  background: linear-gradient(270deg, #272B30 0%, rgba(39, 43, 48, 0.39) 100%) url('@img/light-mask.png') 0 0 no-repeat;
+
+  background: url('@img/light-mask.png') 0 0 no-repeat;
+
+
+  /* .feedback__container */
+  &__container {
+    position: relative;
+  }
+
+  /* .feedback__question */
+  &__question {}
+
+  /* .feedback__title */
+  &__title {
+    @include adaptiveValue("margin-bottom", 46, 34);
+  }
+
+  /* .feedback__form */
+  &__form {
+    max-width: rem(924);
+    margin: 0 auto;
+  }
+
+  /* .feedback__button */
+  &__button {
+    @media (max-width:$mobileSmall) {
+      width: 100%;
+    }
+
+    .quiz-form__form & {
+      @media (max-width:$mobileSmall) {
+        margin-top: rem(49);
+      }
+    }
+  }
+}
+
+.checkbox {
+
+  /* .checkbox_cf7 */
+  &_cf7 {}
+
+  /* .checkbox__input */
+  &__input {}
+
+  /* .checkbox__text */
+  &__text {
+
+    /* .checkbox__text_subm */
+    &_subm {}
+  }
+}
+
+
+// .checkbox__input:checked~span:before {
+//   background: transparent url('@img/icons/check.svg') center center no-repeat;
+// }
+
+
+// .wpcf7-acceptance .wpcf7-list-item span:before,
+// .checkbox__label:before {
+//   content: "";
+//   flex: 0 0 3rem;
+//   width: 3rem;
+//   height: 3rem;
+//   background-color: #fff;
+//   border: 1px solid #D9D9D9;
+//   border-radius: clamp(0.5rem, 0.4368421053rem + 0.1754385965vw, 0.7rem);
+// }
+
+
+.wpcf7-form-control {}
+
+.wpcf7-acceptance {}
+
+.wpcf7-list-item {}
+
+.checkbox-real {
+
+  /* .checkbox-real__input */
+  &__input {}
+}

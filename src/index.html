@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Asfaria"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+
+			<section class="intro">
+				<a href="" class="intro__scroll-btn" data-goto=".about-us">
+					<svg width="35" height="28" viewBox="0 0 35 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect x="34" y="1" width="26" height="33" rx="11.5" transform="rotate(90 34 1)" stroke="#4C5661" />
+						<rect x="28.5" y="12.5" width="3" height="8" rx="1.5" transform="rotate(90 28.5 12.5)" fill="#4C5661" />
+						<line x1="33.5" y1="14" x2="14.5" y2="14" stroke="#4C5661" />
+					</svg>
+					<span>scroll down</span>
+				</a>
+				<div class="intro__container">
+					<div class="intro__content">
+						<h1 class="intro__title"><span><svg xmlns="http://www.w3.org/2000/svg" width="72" height="73"
+									viewBox="0 0 72 73" fill="none">
+									<path
+										d="M1.5 70V71.5H3H40.687C50.067 71.5 57.431 69.8568 62.5706 66.3612C67.8266 62.8303 70.5 57.8352 70.5 51.5271C70.5 47.3554 69.3679 43.7108 67.0456 40.6755C65.2466 38.2059 62.8371 36.241 59.8643 34.7602C61.5902 33.538 63.0401 32.1129 64.1967 30.4773C66.2952 27.5364 67.3435 24.1999 67.3435 20.5157C67.3435 14.8989 64.8877 10.2881 60.141 6.77526C55.3565 3.17019 48.1419 1.5 38.7739 1.5H3H1.5V3V70ZM26.6913 52.7071V45.1786H38.7739C41.131 45.1786 42.5976 45.611 43.4316 46.2259L43.4462 46.2367L43.4612 46.2472C44.2884 46.8266 44.7348 47.6485 44.7348 48.9429C44.7348 50.2372 44.2884 51.0591 43.4612 51.6386L43.4462 51.649L43.4316 51.6598C42.5976 52.2747 41.131 52.7071 38.7739 52.7071H26.6913ZM35.713 27.2471H26.6913V20.2929H35.713C38.1696 20.2929 39.6247 20.7054 40.3823 21.2529L40.3977 21.2641L40.4135 21.2748C41.1585 21.785 41.5783 22.5311 41.5783 23.77C41.5783 24.9192 41.1748 25.7003 40.3766 26.2912C39.6175 26.8366 38.1635 27.2471 35.713 27.2471Z"
+										stroke="white" stroke-width="3" />
+								</svg>ug</span> sweeping service</h1>
+						<h2 class="intro__adress">New York, New Jercey, Connecticut</h2>
+
+						<div class="intro__contacts">
+							<a href="" data-goto=".feedback" class="intro__button button"><span>contact us</span></a>
+							<a href="" data-goto=".types" class="intro__link link">
+								<img src="@img/left-circle.svg" alt="">
+								Learn more about how we can help
+							</a>
+						</div>
+					</div>
+					<div class="intro__media">
+						<div class="intro__image">
+							<img class="intro__back-img" src="@img/intro/intro-back-img.svg" alt="">
+							<img data-prlx-mouse data-prlx-dxr class="intro__main-img" src="@img/intro/intro-img.png" alt="">
+							<img data-prlx-mouse class="intro__wave-img" src="@img/intro/wave.svg" alt="">
+							<img class="intro__decor decore-ellipse" src="@img/ellipse.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="about-us">
+				<div class='about-us__container_big'>
+					<h2 class="about-us__title title" data-watch anim-up-down>About us</h2>
+					<ul class="about-us__row">
+						<li class="about-us__column" data-watch anim-up-down delay>
+							<p>We have wide experience in this field. Our staff has regular training and briefings conducted on all
+								the latest developments and cases.</p>
+						</li>
+						<li class="about-us__column" data-watch anim-up-down delay10>
+							<p>We use only professional specialized equipment.</p>
+						</li>
+						<li class="about-us__column" data-watch anim-up-down delay20>
+							<p>We don’t gather any client data.100% confidentiality is guaranteed.</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="devices" data-prlx-parent>
+				<div class='devices__container'>
+					<h2 class="devices__title title" data-watch anim-up-down>tracking devices we can detect</h2>
+					<h3 class="devices__subtitle subtitle" data-watch anim-up-down>Common types of surveillance devices that we
+						sweep for include:</h3>
+					<div class="devices__items">
+						<div class="devices__item item-devices" data-watch anim-up-down>
+							<div class="item-devices__img">
+								<img src="@img/devices-1.png" alt="Фото камеры">
+							</div>
+							<h5 class="item-devices__title" data-watch anim-up-down>Hidden cameras</h5>
+							<p class="item-devices__text" data-watch anim-up-down delay10>
+								Tiny cameras with high-quality image transmission can be almost invisible to the naked eye but hidden in
+								an everyday objects like electronic devices or furniture. Special tools may be needed to locate them and
+								prevent surveillance.
+							</p>
+							<a href="#" data-goto=".calculate" class="item-devices__link link link_r" data-watch anim-up-down delay10>
+								<img src="@img/left-circle.svg" alt="">
+								Apply for inspection</a>
+						</div>
+						<div class="devices__item item-devices" data-watch anim-up-down>
+							<div class="item-devices__img">
+								<img src="@img/devices-2.png" alt="Фото камеры">
+							</div>
+							<h5 class="item-devices__title" data-watch anim-up-down>Hidden microphones</h5>
+							<p class="item-devices__text" data-watch anim-up-down delay10>
+								Microphones can be hidden in a variety of ways, such as being embedded in clothing, electronic devices
+								or a phone charger. They may be used to gather information on individuals or companies with malicious
+								intent.
+							</p>
+							<a href="#" data-goto=".calculate" class="item-devices__link link link_r" data-watch anim-up-down delay10>
+								<img src="@img/left-circle.svg" alt="">
+								Apply for inspection</a>
+						</div>
+					</div>
+				</div>
+				<img src="@img/b1-img.png" alt="" class="back-image back-image_1" data-prlx data-direction="-1"
+					data-coefficient="150">
+			</section>
+
+			<section class="types">
+				<div class='types__container'>
+					<h2 class="types__title title" data-watch anim-up-down>WE can inspect the following premises types</h2>
+					<h3 class="types__subtitle subtitle" data-watch anim-up-down delay20>Depending on the object being inspected,
+						we pay attention to the places
+						of a high risk.</h3>
+					<div class="types__items">
+						<div class="types__item" data-watch anim-up-down>
+							<div class="types__image types__image_offices">
+								<img class="types__image_img" src="@img/types/office.png" alt="Offices">
+							</div>
+							<h6 class="types__name">Offices</h6>
+						</div>
+						<div class="types__item" data-watch anim-up-down delay10>
+							<div class="types__image types__image_apartmens">
+								<img src="@img/types/apartmens.png" alt="Apartments and Houses">
+							</div>
+							<h6 class="types__name">Apartments and Houses</h6>
+						</div>
+						<div class="types__item" data-watch anim-up-down delay20>
+							<div class="types__image types__image_hotel">
+								<img src="@img/types/hotel-room.png" alt="Hotel Rooms">
+							</div>
+							<h6 class="types__name">Hotel Rooms</h6>
+						</div>
+						<div class="types__item" data-watch anim-up-down>
+							<div class="types__image types__image_bach">
+								<img src="@img/types/bachroom.png" alt="Changing Rooms and Bathrooms">
+							</div>
+							<h6 class="types__name">Changing Rooms and Bathrooms</h6>
+						</div>
+						<div class="types__item" data-watch anim-up-down delay10>
+							<div class="types__image types__image_cars">
+								<img src="@img/types/cars.png" alt="Cars, Yachts and Planes">
+							</div>
+							<h6 class="types__name">Cars, Yachts and Planes</h6>
+						</div>
+						<div class="types__item types__item_last" data-watch anim-up-down delay20>
+							<img src="@img/types/border-gradient.svg" alt="">
+							<div class="types__text-block">
+								<p class="types__descr"><span>Other area for inspection?</span>
+									We’ll help</p>
+								<a href="#" data-goto=".calculate" class="types__link link link_r" data-da=".types__item_last, 1040">
+									<img src="@img/left-circle.svg" alt="">Submit the application
+								</a>
+							</div>
+							<!-- <div class="types__image">
+							</div> -->
+						</div>
+						<a href="#" data-goto=".calculate" class="types__link link link_r types__link_null">
+							<img src="@img/left-circle.svg" alt="">Submit the application
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="equipment" data-prlx-parent>
+				<div class="equipment__container">
+
+					<div class="equipment__image">
+						<img class="equipment__back-img" src="@img/equipment/equipment-back-img.svg" alt="">
+						<img data-prlx-mouse data-prlx-dxr class="equipment__main-img" src="@img/equipment/equipment-img.png"
+							alt="">
+						<img data-prlx-mouse class="intro__wave-img" src="@img/equipment/wave.svg" alt="">
+						<img class="equipment__decor decore-ellipse" src="@img/ellipse.svg" alt="">
+					</div>
+
+					<!-- <div class="equipment__image">
+						<img src="@img/equipment-img.png" alt="">
+						<img class="equipment__decor decore-ellipse" src="@img/ellipse.svg" alt="">
+					</div> -->
+					<div class="equipment__content">
+						<h2 class="equipment__title title" data-watch anim-up-down>we use only certified specialized equipment</h2>
+						<h3 class="equipment__subtitle subtitle" data-watch anim-up-down delay20>We keep our finger on the pulse of
+							wiretapping topics, visit
+							exhibitions and follow advanced technologies for detecting devices.</h3>
+						<p class="equipment__text" data-watch anim-up-down> In order to detect, identify operability and
+							deactivate a bug, it is important
+							not only to manually check the
+							premises by an experienced specialist, but also to inspect the area with special devices capable of
+							detecting the
+							most modern wiretaps.</p>
+						<p class="equipment__text equipment__text_white" data-watch anim-up-down> Our company uses original
+							certified devices allowing to
+							efficiently and accurately detect tracking and espionage
+							tools.</p>
+						<p class="equipment__text" data-watch anim-up-down>
+							Beware of unscrupulous workers who use cheap counterparts. Usually such equipment is several times cheaper
+							and does not provide the proper level of protection.
+						</p>
+					</div>
+				</div>
+				<img data-prlx data-direction="-1" data-coefficient="40" src="@img/b2-img.png" alt=""
+					class="back-image back-image_2">
+			</section>
+
+			<section class="anonymously">
+				<div class="anonymously__container">
+					<div class="anonymously__content">
+						<h2 class="anonymously__title title" data-watch anim-up-down>
+							we work anonymously
+						</h2>
+						<ul class="anonymously__list">
+							<li class="anonymously__item" data-watch anim-up-down delay10>
+								<img class="anonymously__icon" src="@img/anon/icon-1.svg" alt="">
+								<div class="anonymously__text-block">
+									<p class="anonymously__text"><span>Night inspection is available</span>
+										We will check the property without unauthorised persons</p>
+								</div>
+							</li>
+							<li class="anonymously__item" data-watch anim-up-down delay20>
+								<img class="anonymously__icon" src="@img/anon/icon-2.svg" alt="">
+								<div class="anonymously__text-block">
+									<p class="anonymously__text"><span>Using an uniform</span>
+										of handymen so that other employees, doorman or the other stuff don’t understand the real purpose of
+										the property visit.</p>
+								</div>
+							</li>
+							<li class="anonymously__item" data-watch anim-up-down delay30>
+								<img class="anonymously__icon" src="@img/anon/icon-3.svg" alt="">
+								<div class="anonymously__text-block">
+									<p class="anonymously__text"><span>Providing the service at the day of application</span>
+										We will help you if you need urgent help.
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+					<div class="anonymously__image" data-prlx-parent>
+						<img class="anonymously__back-img" src="@img/anon/anon2-back-img.svg" alt="">
+						<img data-prlx-mouse data-prlx-dxr class="anonymously__main-img" src="@img/anon/anon2-img.png" alt="">
+						<img data-prlx-mouse class="anonymously__wave-img" src="@img/anon/wave.svg" alt="">
+
+						<!-- <img src="@img/anon/anon-img.png" alt=""> -->
+						<img class="anonymously__decor decore-ellipse" src="@img/ellipse.svg" alt="">
+						<img data-prlx data-coefficient="40" data-direction="-1" class="anonymously__img anonymously__img_1"
+							src="@img/anon/anon-1.png" alt="">
+						<img data-prlx data-coefficient="200" data-direction="1" class="anonymously__img anonymously__img_2"
+							src="@img/anon/anon-2.png" alt="">
+					</div>
+				</div>
+			</section>
+
+			<section class="prices">
+				<div class="prices__container">
+					<h2 class="prices__title title" data-watch anim-up-down>Our prices</h2>
+					<ul class="prices__list">
+						<div class="prices__cell prices__name" data-watch anim-up-down>Residential area</div>
+						<div class="prices__cell prices__price" data-watch anim-up-down delay10>from 3,200$</div>
+						<div class="prices__cell prices__text" data-watch anim-up-down delay20>The price includes 1,900 sq.ft. +1.3$
+							for each additional sq.ft.
+						</div>
+
+						<div class="prices__cell prices__name" data-watch anim-up-down>Office area</div>
+						<div class="prices__cell prices__price" data-watch anim-up-down delay10>from 3,200$</div>
+						<div class="prices__cell prices__text" data-watch anim-up-down delay20>The price includes 1,600 sq.ft. +1.8$
+							for each additional sq.ft.
+						</div>
+
+						<div class="prices__cell prices__name prices__name_car" data-watch anim-up-down>Car</div>
+						<div class="prices__cell prices__price prices__price_car" data-watch anim-up-down delay10>1,600$</div>
+						<div class="prices__cell prices__text prices__text_null" data-watch anim-up-down delay20></div>
+
+						<div class="prices__cell prices__name" data-watch anim-up-down>Marine vessel</div>
+						<div class="prices__cell prices__price" data-watch anim-up-down delay10>from 4,300$ </div>
+						<div class="prices__cell prices__text" data-watch anim-up-down delay20>The price includes 38 ft. +70$ for
+							each additional ft.</div>
+
+						<div class="prices__cell prices__name" data-watch anim-up-down>Airplane</div>
+						<div class="prices__cell prices__price" data-watch anim-up-down delay10>from 3,200$</div>
+						<div class="prices__cell prices__text" data-watch anim-up-down delay20>The price includes 26 ft. +25$ for
+							each additional ft.</div>
+
+						<div class="prices__cell prices__date" data-watch anim-up-down>Check the property without unauthorised
+							persons from 10 pm to 7 am
+						</div>
+						<div class="prices__cell prices__text" data-watch anim-up-down delay10>Extra +10% to the cost</div>
+
+					</ul>
+				</div>
+			</section>
+
+			<section class="how-work">
+				<div class="how-work__container">
+					<div class="how-work__decore decore-ellipse">
+						<svg width="1074" height="1172" viewBox="0 0 1074 1172" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g filter="url(#filter0_f_1_1351)">
+								<ellipse cx="586.254" cy="586" rx="285.851" ry="286" fill="#A156BA" fill-opacity="0.5" />
+							</g>
+							<defs>
+								<filter id="filter0_f_1_1351" x="0.402588" y="0" width="1171.7" height="1172"
+									filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+									<feFlood flood-opacity="0" result="BackgroundImageFix" />
+									<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+									<feGaussianBlur stdDeviation="150" result="effect1_foregroundBlur_1_1351" />
+								</filter>
+							</defs>
+						</svg>
+
+					</div>
+
+					<div class="item-how-work__block">
+						<img src="@img/how-work/arrow.svg" alt="" class="item-how-work__arrow_mob">
+						<img src="@img/how-work/arrow.svg" alt="" class="item-how-work__arrow_mob">
+						<img src="@img/how-work/arrow.svg" alt="" class="item-how-work__arrow_mob">
+						<img src="@img/how-work/arrow.svg" alt="" class="item-how-work__arrow_mob">
+					</div>
+					<h2 class="how-work__title title" data-watch anim-up-down>How do we work</h2>
+					<ul class="how-work__items">
+						<li class="how-work__item item-how-work" data-watch anim-up-down>
+							<img src="@img/how-work/arrow.svg" alt="" class="item-how-work__arrow">
+							<div class="item-how-work__img">
+								<img class="item-how-work__circle" src="@img/how-work/circle.svg" alt="">
+								<img class="item-how-work__icon" src="@img/how-work/icon-1.svg" alt="">
+							</div>
+							<h5 class="item-how-work__name">Request creation</h5>
+							<p class="item-how-work__text">We will contact you</p>
+						</li>
+						<li class="how-work__item item-how-work" data-watch anim-up-down delay10>
+							<img src="@img/how-work/arrow.svg" alt="" class="item-how-work__arrow">
+							<div class="item-how-work__img">
+								<img class="item-how-work__circle" src="@img/how-work/circle.svg" alt="">
+								<img class="item-how-work__icon" src="@img/how-work/icon-2.svg" alt="">
+							</div>
+							<h5 class="item-how-work__name">Specialist call</h5>
+							<p class="item-how-work__text">Call or write to you, at your request, to clarify the details</p>
+						</li>
+						<li class="how-work__item item-how-work" data-watch anim-up-down delay20>
+							<img src="@img/how-work/arrow.svg" alt="" class="item-how-work__arrow">
+
+							<div class="item-how-work__img">
+								<img class="item-how-work__circle" src="@img/how-work/circle.svg" alt="">
+								<img class="item-how-work__icon" src="@img/how-work/icon-3.svg" alt="">
+							</div>
+							<h5 class="item-how-work__name">$300 deposit</h5>
+							<p class="item-how-work__text">Not refunded if the service is cancelled less than 24 hours in advance</p>
+						</li>
+						<li class="how-work__item item-how-work" data-watch anim-up-down delay30>
+							<img src="@img/how-work/arrow.svg" alt="" class="item-how-work__arrow">
+
+							<div class="item-how-work__img">
+								<img class="item-how-work__circle" src="@img/how-work/circle.svg" alt="">
+								<img class="item-how-work__icon" src="@img/how-work/icon-4.svg" alt="">
+							</div>
+							<h5 class="item-how-work__name">Inspection execution</h5>
+							<p class="item-how-work__text">Our team will thoroughly inspect the area and deactivate the tracking
+								devices and surveillance cameras if you need it. </p>
+						</li>
+						<li class="how-work__item item-how-work" data-watch anim-up-down delay40>
+							<div class="item-how-work__img">
+								<img class="item-how-work__circle" src="@img/how-work/circle.svg" alt="">
+								<img class="item-how-work__icon" src="@img/how-work/icon-5.svg" alt="">
+							</div>
+							<h5 class="item-how-work__name">Final payment</h5>
+							<p class="item-how-work__text">We will provide a document with the object details for makinga final
+								payment by Visa, MasterCard, Zelle, Pay Pall, checks, cash. </p>
+						</li>
+					</ul>
+				</div>
+			</section>
+			@@include('html/_popup.htm',{})
+
+			<section class="calculate" data-prlx-parent>
+				<div class="calculate__container">
+					<h2 class="calculate__title title" data-watch anim-up-down>calculate the cost</h2>
+					<h3 class="calculate__subtitle subtitle" data-watch anim-up-down delay20>If you need an urgent check, write to
+						us on <span>
+							<a href="https://wa.me/13473008286" target="_blank">Whatsapp</a>
+						</span><i>+1 (347) 300-82-86</i> or <span><a
+								href="mailto:nyasfaria@gmail.com">nyasfaria@gmail.com</a></span></h3>
+					<ul class="calculate__list">
+
+						<li class="calculate__item" data-watch anim-up-down data-popup="#quiz-popup-offices">
+							<div class="calculate__image">
+								<img src="@img/calculate/office.png" alt="Office" class="calculate__img calculate__img_office">
+								<div class="calculate__check">
+									<svg class="calculate__svg" width="23" height="23" viewBox="0 0 23 23" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<circle cx="11.5" cy="11.5" r="11" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 23 23)"
+											stroke="#28333E" />
+										<path d="M15 10L11 14M7.70711 10L11.7071 14" stroke="#28333E" />
+									</svg>
+								</div>
+							</div>
+							<div class="calculate__name">Offices</div>
+						</li>
+
+						<li class="calculate__item" data-watch anim-up-down delay20 data-popup="#quiz-popup-apartments">
+							<div class="calculate__image calculate__image_apartments">
+								<img src="@img/calculate/apartments.png" alt="Apartments and Houses"
+									class="calculate__img  calculate__img_apartments">
+								<div class="calculate__check">
+									<svg class="calculate__svg" width="23" height="23" viewBox="0 0 23 23" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<circle cx="11.5" cy="11.5" r="11" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 23 23)"
+											stroke="#28333E" />
+										<path d="M15 10L11 14M7.70711 10L11.7071 14" stroke="#28333E" />
+									</svg>
+								</div>
+							</div>
+							<div class="calculate__name">Apartments <br> and Houses</div>
+						</li>
+
+						<li class="calculate__item" data-watch anim-up-down delay40 data-popup="#quiz-popup-cars">
+							<div class="calculate__image">
+								<img src="@img/calculate/cars.png" alt="Cars" class="calculate__img calculate__img_cars">
+								<div class="calculate__check">
+									<svg class="calculate__svg" width="23" height="23" viewBox="0 0 23 23" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<circle cx="11.5" cy="11.5" r="11" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 23 23)"
+											stroke="#28333E" />
+										<path d="M15 10L11 14M7.70711 10L11.7071 14" stroke="#28333E" />
+									</svg>
+								</div>
+							</div>
+							<div class="calculate__name">Cars</div>
+						</li>
+
+						<li data-popup="#quiz-popup-yachts" class="calculate__item" data-watch anim-up-down delay60>
+							<div class="calculate__image">
+								<img src="@img/calculate/yachts.png" alt="Yachts" class="calculate__img calculate__img_yachts">
+								<div class="calculate__check">
+									<svg class="calculate__svg" width="23" height="23" viewBox="0 0 23 23" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<circle cx="11.5" cy="11.5" r="11" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 23 23)"
+											stroke="#28333E" />
+										<path d="M15 10L11 14M7.70711 10L11.7071 14" stroke="#28333E" />
+									</svg>
+								</div>
+							</div>
+							<div class="calculate__name">Yachts</div>
+						</li>
+
+						<li data-popup="#quiz-popup-planes" class="calculate__item" data-watch anim-up-down delay80>
+							<div class="calculate__image">
+								<img src="@img/calculate/planes.png" alt="Planes" class="calculate__img calculate__img_planes">
+								<div class="calculate__check">
+									<svg class="calculate__svg" width="23" height="23" viewBox="0 0 23 23" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<circle cx="11.5" cy="11.5" r="11" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 23 23)"
+											stroke="#28333E" />
+										<path d="M15 10L11 14M7.70711 10L11.7071 14" stroke="#28333E" />
+									</svg>
+								</div>
+							</div>
+							<div class="calculate__name">Planes</div>
+						</li>
+
+					</ul>
+				</div>
+				<img src="@img/b3-img.png" alt="" class="back-image back-image_3" data-prlx>
+			</section>
+
+			<section class="help-you">
+				<div class="help-you__container">
+					<div class="help-you__content">
+						<h2 class="help-you__title title" data-watch anim-up-down>we can help you to prevent a wiretapping</h2>
+						<h3 class="help-you__subtitle subtitle" data-watch anim-up-down delay10>If you suspect your confidential
+							data leak or are afraid of its
+							occurrence, inspect the premise to save your resources :</h3>
+						<ul class="help-you__list">
+							<li class="help-you__item" data-watch anim-up-down>
+								<img src="@img/icons/star.svg" alt="Star">
+								Reduce the cost for security equipment
+							</li>
+							<li class="help-you__item" data-watch anim-up-down delay10>
+								<img src="@img/icons/star.svg" alt="Star">
+								Save your nerves by having an accurate answer if there is a bugging in your area
+							</li>
+							<li class="help-you__item" data-watch anim-up-down delay20>
+								<img src="@img/icons/star.svg" alt="Star">
+								Prepare to attack instead of correcting the outcome
+							</li>
+							<li class="help-you__item" data-watch anim-up-down delay30>
+								<img src="@img/icons/star.svg" alt="Star">
+								Find out the attacker and interrupt the data collection that has begun
+							</li>
+						</ul>
+					</div>
+					<div class="help-you__media">
+						<img data-prlx-mouse data-prlx-dxr class="help-you__main-img" src="@img/help-you/help-you-img.png"
+							alt="Picture">
+						<img class="help-you__back-img" src="@img/help-you/help-you-back-img.svg" alt="Picture">
+						<img data-prlx-mouse class="help-you__wave-img" src="@img/help-you/wave.svg" alt="Picture">
+						<img class="help-you__decor decore-ellipse" src="@img/ellipse.svg" alt="">
+					</div>
+				</div>
+			</section>
+
+			<section class="faq">
+				<img class="faq__decor" src="@img/faq-bg-2.jpg" alt="">
+				<div class="faq__container">
+					<div class="faq__decor_img"></div>
+					<!-- <img class="faq__decor_img" src="@img/faq-img.png" alt=""> -->
+					<h2 class="faq__title title" data-watch anim-up-down>frequently asked questions</h2>
+					<div class="faq__body">
+
+						<div data-spollers data-one-spoller class="spollers">
+							<div class="spollers__item" data-watch anim-up-down>
+								<button type="button" data-spoller class="spollers__title"><span>If you find bugs, do you remove
+										them?</span></button>
+								<div class="spollers__body">This point is discussed in advance with the client. We can deactivate
+									tracking devices without harming the interior. As for the office, we can just warn about the
+									presence
+									of the tracking equipment, so as you can use wiretapping for your own purposes.</div>
+							</div>
+							<div class="spollers__item" data-watch anim-up-down delay10>
+								<button type="button" data-spoller class="spollers__title"><span>Will there be any additional payments
+										(taxes, toll bridges, tunnels, roads)?</span>
+								</button>
+								<div class="spollers__body">There are no additional fees. Everything is included in the price,
+									considering federal and state taxes.</div>
+							</div>
+							<div class="spollers__item" data-watch anim-up-down delay20>
+								<button type="button" data-spoller class="spollers__title"><span>How long will the inspection
+										take?</span>
+								</button>
+								<div class="spollers__body">It depends on the area, object workload with household items and
+									electronics. The latter takes additional time as it emits interference.Also, the working time
+									depends
+									on the object itself, where the check is made.</div>
+							</div>
+							<div class="spollers__item" data-watch anim-up-down delay30>
+								<button type="button" data-spoller class="spollers__title"><span>What are the guarantees that you will
+										find a hidden device? What if it is tiny or turned off?</span>
+								</button>
+								<div class="spollers__body">Our specialists regularly improve their skills by studying cases where and
+									under what conditions hidden devic es were discovered. Experience, professional equipment and a
+									desire
+									to help the client minimize risks.
+								</div>
+							</div>
+							<div class="spollers__item" data-watch anim-up-down delay40>
+								<button type="button" data-spoller class="spollers__title"><span>If the night inspection is
+										possible?</span></button>
+								<div class="spollers__body">Yes, it is possible to check at any time convenient for the client. In
+									case
+									of checking at night from 10pm - 7pm, then 10% is added to the total cost.</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<section class="feedback" id="feedback">
+				<div class="feedback__container">
+					<h2 class="feedback__title title" data-watch anim-up-down>Do you Still have a question?</h2>
+					<form action="" class="feedback__form form" data-dev data-popup-message="#thanks-popup">
+						<div class="form__line form__line_name" data-watch anim-up-down>
+							<label class="form__label" for="name">Your Name*</label>
+							<input data-required="text" type="text" name="name" data-error="Type your name here"
+								data-placeholder="Type your name here" placeholder="Type your name here" class="input">
+						</div>
+						<div class="form__line form__line_tel" data-watch anim-up-down delay10>
+							<label class="form__label" for="tel">Phone Number*</label>
+							<input autocomplete="off" type="text" name="tel" data-error="Type your phone number"
+								data-required="number" data-placeholder="(___) ___-__-__" placeholder="(___) ___-__-__" class="input">
+							<div class="code-select">
+								<select class="wpcf7-form-control wpcf7-select" aria-invalid="false" name="menu-91">
+									<option value="+1">+1</option>
+									<option value="+7">+7</option>
+									<option value="+380">+380</option>
+									<option value="+20">+20</option>÷
+								</select>
+							</div>
+						</div>
+						<div class="form__line form__line_mail" data-watch anim-up-down delay20>
+							<label class="form__label" for="name">Your Email*</label>
+							<input data-required="text" type="text" name="mail" data-error="Type your email here"
+								data-placeholder="Type your Email here" placeholder="Type your Email here" class="input">
+						</div>
+						<div class="form__line form__line_text" data-watch anim-up-down delay30>
+							<label class="form__label" for="feedback-text">Description</label>
+							<textarea name="feedback-text" id="feedback-text" cols="30" rows="10"
+								data-placeholder="Type your question here" placeholder="Type your question here"></textarea>
+						</div>
+						<div class="form__line form__line_send" data-watch anim-up-down delay40>
+
+
+							<!-- <label class="checkbox checkbox_cf7">
+
+								<span class="wpcf7-form-control wpcf7-acceptance">
+									<span class="wpcf7-list-item">
+										<input type="checkbox" name="accept" value="1" class="checkbox__input checkbox-real__input"
+											id="accept" aria-invalid="false">
+										<span>
+
+										</span>
+									</span>
+								</span>
+
+								<span class="checkbox__text checkbox__text_subm">I agree with <a href="#!">the privacy
+										policy</a>
+								</span>
+
+							</label> -->
+
+							<div class="checkbox">
+								<input id="c_1" data-error="Нет подтверждения" class="checkbox__input" type="checkbox" value="1"
+									name="form[]">
+								<label for="c_1" class="checkbox__label"><span class="checkbox__text">I agree with <a href="#!"
+											data-popup="#policy-popup">the
+											privacy policy</a></span></label>
+							</div>
+
+							<button id="b_1" type="submit" class="feedback__button button"><span>Submit</span></button>
+						</div>
+					</form>
+
+					<div class="button__action" data-watch anim-up-down>
+						<a data-goto=".intro" href="#" class="button__scroll-up">
+							<img src="@img/icons/arr.svg" alt="Стрелка вверх">
+						</a>
+						<span>Climb up</span>
+					</div>
+
+				</div>
+			</section>
+
+			<section class="contacts">
+				<!-- <iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.0787820685855!2d-73.99412042343083!3d40.69426253870052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a490795890f%3A0x8fadb12363a13b3c!2zMTk1IE1vbnRhZ3VlIFN0LCBCcm9va2x5biwgTlkgMTEyMDEsINCh0KjQkA!5e0!3m2!1sru!2s!4v1692814693720!5m2!1smx!2s"
+					width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+				<!-- <map class="js-map"></map> -->
+				<div class="contacts__container">
+					<!-- <img src="@img/icons/map-svg.svg" alt="" class="contacts__icon"> -->
+					<div class="contacts__body">
+						<h2 class="contacts__title title" data-watch anim-up-down>Contact information</h2>
+						<ul class="contacts__list">
+							<li class="contacts__item">
+								<div class="contacts__name" data-watch anim-up-down>Address:</div>
+								<div class="contacts__value" data-watch anim-up-down>Address 195 Montague St. Brooklyn, NY 11201 United
+									States</div>
+							</li>
+							<li class="contacts__item">
+								<div class="contacts__name" data-watch anim-up-down>Opening hours:</div>
+								<div class="contacts__value" data-watch anim-up-down>Open 24 hours</div>
+							</li>
+							<li class="contacts__item">
+								<div class="contacts__name" data-watch anim-up-down>Contact us:</div>
+								<a href="tel:+13473008286" class="contacts__value" data-watch anim-up-down>
+									+1 (347) 300-82-86</a>
+								<a href="mailto:nyasfaria@gmail.com" class="contacts__value contacts__value_mail" data-watch
+									anim-up-down>nyasfaria@gmail.com</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+		</main>
+
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

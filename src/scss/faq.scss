@@ -1,0 +1,72 @@
+.faq {
+  position: relative;
+  @include adaptiveValue("padding-top", 138, 79);
+  @include adaptiveValue("padding-bottom", 154, 104);
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: url('@img/faq-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    mix-blend-mode: darken;
+    z-index: -1;
+  }
+
+  /* .faq__container */
+  &__container {
+    position: relative;
+  }
+
+  /* .faq__title */
+  &__title {
+    @include adaptiveValue("margin-bottom", 108, 28);
+  }
+
+  /* .faq__body */
+  &__body {}
+
+
+  &__decor {
+    position: absolute;
+    top: 0;
+
+    &_img {
+      position: absolute;
+      // left: -16.7%;
+      // bottom: -45.3%;
+      left: rem(-239);
+      bottom: rem(-321);
+      background: url('@img/faq-img.png') 0 0 no-repeat;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+
+      @media (max-width: em(1100)) {
+        bottom: rem(-290);
+      }
+    }
+  }
+}
+
+
+
+.spollers {
+
+  /* .spollers__item */
+  &__item {}
+
+  /* .spollers__title */
+  &__title {}
+
+  /* .spollers__body */
+  &__body {}
+}

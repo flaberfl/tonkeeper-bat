@@ -1,0 +1,236 @@
+.calculate {
+  position: relative;
+  @include adaptiveValue("padding-top", 108, 70);
+
+  @media (max-width: em(1300)) {
+    @include adaptiveValue("padding-bottom", 100, 74);
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    background: url('@img/calculate/calculate-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: -1;
+  }
+
+  /* .calculate__title */
+  &__title {
+    @include adaptiveValue("margin-bottom", 29, 24);
+  }
+
+  /* .calculate__subtitle */
+  &__subtitle {
+    @include adaptiveValue("margin-bottom", 54, 30);
+
+    @include adaptiveValue("font-size", 24, 14);
+
+    span {
+      font-weight: 600;
+      color: #fff;
+      transition: color 0.3s ease 0s;
+
+      &:hover {
+        color: $hoverColor;
+      }
+    }
+
+    i {
+      font-style: normal;
+      white-space: nowrap;
+    }
+  }
+
+  /* .calculate__list */
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+
+    @media (max-width:$mobile) {
+      @include adaptiveValue("row-gap", 50, 18);
+    }
+  }
+
+  /* .calculate__item */
+  &__item {
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.5s ease 0s;
+
+    &:hover {
+      .calculate__svg {
+        fill: #28333E;
+
+        path {
+          stroke: white;
+        }
+      }
+
+      .calculate__img {
+        transform: perspective(300px) rotateY(7deg);
+
+        &_planes {
+          transform: perspective(300px) rotateY(15deg);
+        }
+      }
+    }
+
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3) {
+      grid-column: span 4;
+    }
+
+    &:nth-child(4),
+    &:nth-child(5) {
+      grid-column: span 6;
+
+      @media (min-width:em(1301)) {
+        margin-top: -16%;
+      }
+    }
+
+    &:nth-child(1) {
+      margin-left: rem(-15);
+    }
+
+    &:nth-child(3) {
+      @media (min-width:$mobile) {
+        margin-right: rem(-25);
+      }
+
+      @media (max-width:$mobile) {
+        margin-left: rem(-15);
+      }
+    }
+
+    &:nth-child(4) {
+      @media (min-width:$mobile) {
+        margin-left: rem(80);
+      }
+
+      @media (min-width:em(1301)) {
+        margin-left: rem(230);
+      }
+    }
+
+    &:nth-child(5) {
+      @media (min-width:$mobile) {
+        margin-right: rem(70);
+      }
+
+      @media (min-width:em(1301)) {
+        margin-right: rem(200);
+      }
+
+      @media (max-width:$mobile) {
+        grid-column: span 12 !important;
+        margin-top: rem(-40);
+      }
+    }
+
+    @media (max-width:$mobile) {
+      grid-column: span 6 !important;
+    }
+  }
+
+  /* .calculate__image */
+  &__image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include adaptiveValue("margin-bottom", 45, 27);
+
+    @include adaptiveValue("width", 289, 150);
+    @include adaptiveValue("height", 289, 150);
+    background-color: #272B30;
+    border-radius: 50%;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      opacity: 0;
+      background: linear-gradient(196deg, #196FC5 0%, #7F3F96 100%);
+      transition: opacity 0.5s ease 0s;
+    }
+
+    &:hover {
+      &::before {
+        opacity: 1;
+      }
+    }
+  }
+
+  /* .calculate__img */
+  &__img {
+    position: absolute;
+    transition: all 0.5s ease 0s;
+    filter: drop-shadow(3px 25px 15px #272B30);
+
+    &_office {
+      width: rem(295);
+      @include adaptiveValue("width", 295, 153);
+    }
+
+    &_apartments {
+      @include adaptiveValue("width", 366, 170);
+      top: -10%;
+
+      @media (max-width: em(600)) {
+        top: -2%;
+      }
+    }
+
+    &_cars {
+      @include adaptiveValue("width", 400, 188);
+      top: 16%;
+    }
+
+    &_yachts {
+      @include adaptiveValue("width", 380, 174);
+      top: 20%;
+    }
+
+    &_planes {
+      @include adaptiveValue("width", 350, 165);
+    }
+  }
+
+  /* .calculate__check */
+  &__check {
+    cursor: pointer;
+    position: absolute;
+    bottom: -8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include adaptiveValue("width", 49, 25);
+    @include adaptiveValue("height", 49, 25);
+
+    background-color: #fff;
+    border-radius: 50%;
+  }
+
+  /* .calculate__name */
+  &__name {
+    @include adaptiveValue("font-size", 18, 14);
+    font-weight: 700;
+    color: #fff;
+    line-height: 120%;
+  }
+}

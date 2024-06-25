@@ -1,0 +1,74 @@
+ //====================================================================================================
+ .footer {
+
+   /* .footer__container */
+   &__container {
+     position: relative;
+     @include adaptiveValue("min-height", 96, 143);
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+
+     @media (max-width: em(680)) {
+       flex-direction: column;
+       padding: rem(15) rem(20);
+
+       text-align: center;
+     }
+
+     @media (max-width:$mobileSmall) {
+       align-items: flex-end;
+     }
+   }
+
+   &__image {
+     position: absolute;
+     @include adaptiveValue("left", 330, -80);
+     bottom: 0;
+
+     @include adaptiveValue("width", 540, 280);
+     z-index: 10;
+   }
+
+   &__policy {
+     position: relative;
+     z-index: 20;
+     font-size: rem(14);
+     font-weight: 500;
+     line-height: 120%;
+     letter-spacing: 1.4px;
+
+     @media (any-hover: hover) {
+       &:hover {
+         text-decoration: underline;
+       }
+     }
+   }
+
+   /* .footer__copyright */
+   &__copyright {
+     position: relative;
+     z-index: 20;
+     font-size: rem(14);
+     line-height: 120%;
+     font-weight: 500;
+   }
+
+   &__logo {
+     display: flex;
+     align-items: center;
+     gap: rem(20);
+
+     font-size: rem(12);
+     letter-spacing: 0.6px;
+     color: #00F0FF;
+
+     .quiz-form__footer & {
+       span {
+         display: none;
+       }
+     }
+   }
+ }
+
+ //====================================================================================================

@@ -1,0 +1,136 @@
+// .checkbox {
+// 	position: relative;
+
+// 	&:not(:last-child) {
+// 		margin-bottom: em(5);
+// 	}
+
+// 	// .checkbox__input
+// 	&__input {
+// 		position: absolute;
+// 		width: 0;
+// 		height: 0;
+// 		opacity: 0;
+
+// 		&:focus-visible+.checkbox__label:before {
+// 			box-shadow: 0 0 5px #000;
+// 		}
+
+// 		&:checked+.checkbox__label:before {
+// 			background: #000;
+// 		}
+// 	}
+
+// 	// .checkbox__label
+// 	&__label {
+// 		cursor: pointer;
+// 		display: inline-flex;
+// 		position: relative;
+// 		gap: 10px;
+
+// 		&:before {
+// 			content: "";
+// 			align-self: flex-start;
+// 			flex: 0 0 20px;
+// 			width: 20px;
+// 			height: 20px;
+// 			border: 1px solid #a7a9ac;
+// 		}
+// 	}
+
+// 	// .checkbox__text
+// 	&__text {
+// 		align-self: center;
+// 	}
+// }
+
+
+
+.checkbox {
+	position: relative;
+
+	// .checkbox__input
+	&__input {
+		position: absolute;
+		width: 0;
+		height: 0;
+		opacity: 0;
+		transition: all .3s ease 0s;
+
+		&:focus+.checkbox__label:before {}
+
+		&:checked+.checkbox__label:before {
+			background: transparent url('@img/icons/check.svg') center center no-repeat;
+
+			@media (max-width:$mobile) {
+				background-size: 70% 70%;
+			}
+		}
+	}
+
+	// .checkbox__label
+	&__label {
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		position: relative;
+
+		@include adaptiveValue("gap", 14, 7);
+
+		&:before {
+			position: absolute;
+			content: "";
+			flex: 0 0 rem(47);
+			width: rem(47);
+			height: rem(47);
+
+			border-radius: rem(10);
+			border: 1px solid #2C4A67;
+
+			@media (max-width:$mobile) {
+				flex: 0 0 rem(26);
+				width: rem(26);
+				height: rem(26);
+			}
+		}
+	}
+
+	// .checkbox__text
+	&__text {
+		position: relative;
+		@include adaptiveValue("padding-left", 88, 66);
+
+		font-size: rem(14);
+		font-weight: 500;
+		line-height: 120%;
+		letter-spacing: 1.4px;
+
+		&::before {
+			content: '';
+			position: absolute;
+			background: #2C4A67;
+
+			width: rem(14);
+			height: rem(1);
+			@include adaptiveValue("left", 60, 40);
+			top: 50%;
+		}
+
+		@media (max-width:$mobile) {
+			font-size: rem(12);
+		}
+
+		a {
+			text-decoration: underline;
+			white-space: nowrap;
+		}
+
+		@media (min-width:$mobileSmall) {
+			max-width: rem(230);
+
+			.quiz-form__form & {
+				max-width: none;
+			}
+		}
+	}
+}

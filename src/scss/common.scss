@@ -1,0 +1,460 @@
+.title {
+  @include adaptiveValue("font-size", 50, 30);
+  color: #FFF;
+  font-weight: 700;
+  text-align: center;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  @include adaptiveValue("font-size", 24, 18);
+  text-align: center;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.link {
+  font-size: rem(14);
+  color: #FFF;
+  text-shadow: 0px 1px 0px rgba(102, 81, 28, 0.50);
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 2.8px;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+
+  display: flex;
+  align-items: center;
+  @include adaptiveValue("gap", 14, 9);
+
+  &_r {
+    img {
+      transform: rotate(-180deg);
+    }
+  }
+
+  img {
+    @include adaptiveValue("width", 23, 17);
+  }
+}
+
+.decore-ellipse {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+
+  @media (max-width: em(600)) {
+    display: none;
+  }
+}
+
+.back-image {
+  position: absolute;
+}
+
+.back-image_1 {
+  bottom: rem(-170);
+  right: rem(-220);
+
+  @media (max-width:$tablet) {
+    display: none;
+  }
+}
+
+.back-image_2 {
+  bottom: -226px;
+  left: -274px;
+
+  @media (max-width:$tablet) {
+    display: none;
+  }
+}
+
+.back-image_3 {
+  bottom: -166px;
+  left: 36px;
+
+  @media (max-width:em(1800)) {
+    display: none;
+  }
+}
+
+[anim-left-right] {
+  position: relative;
+  overflow: hidden;
+
+  transition-timing-function: ease;
+  transition-duration: .4s;
+
+  img {
+    opacity: 0;
+    max-width: 100%;
+  }
+
+  &::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    // background-color: #232323;
+    // background-color: $btnColor;
+    z-index: 2;
+    transform: translateX(101%);
+    display: block;
+  }
+
+
+  &._watcher-view {
+    &::before {
+      animation: toRight 2s cubic-bezier(.77, 0, .175, 1) forwards;
+    }
+
+    img {
+      animation: zoomIN 1s cubic-bezier(.77, 0, .175, 1) forwards;
+      animation-delay: 1s;
+    }
+
+  }
+}
+
+[anim-left-right-del] {
+  overflow: visible;
+
+  &::before {
+    display: none;
+  }
+}
+
+[btn-anim-to_right-trans] {
+  position: relative;
+  overflow: hidden;
+  border: 0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    display: block;
+
+    // background-color: $borderColor;
+    transition: all 2s ease 0s;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+
+    // border: 1px solid $btnColor;
+    transition: width 1.5s ease 0s;
+  }
+
+  &._watcher-view {
+    &::before {
+      animation: btnAnim 2s cubic-bezier(.77, 0, .175, 1) forwards;
+    }
+
+    &::after {
+      // width: 100%;
+      animation: btnAnimBorder 2s cubic-bezier(.77, 0, .175, 1) forwards;
+    }
+  }
+}
+
+[btn-anim-to_right-blue] {
+  position: relative;
+  overflow: hidden;
+  border: 0;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    display: block;
+
+    // background-color: $hoverColor;
+  }
+
+  &._watcher-view {
+    &::after {
+      animation: btnAnimBlue 2s cubic-bezier(.77, 0, .175, 1) forwards;
+    }
+  }
+}
+
+
+@keyframes moving {
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg)
+  }
+}
+
+
+[anim-up-down] {
+  // transform: translate(rem(0), rem(20));
+  transform: translate(rem(0), rem(30));
+  opacity: 0;
+  transition: all $animSpeed ease 0s;
+
+  &._watcher-view {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+[delay10] {
+  transition: all $animSpeed ease .1s;
+}
+
+[delay20] {
+  transition: all $animSpeed ease .2s;
+}
+
+[delay30] {
+  transition: all $animSpeed ease .3s;
+}
+
+[delay40] {
+  transition: all $animSpeed ease .4s;
+}
+
+[delay50] {
+  transition: all $animSpeed ease .5s;
+}
+
+[delay60] {
+  transition: all $animSpeed ease .6s;
+}
+
+[delay70] {
+  transition: all $animSpeed ease .7s;
+}
+
+[delay80] {
+  transition: all $animSpeed ease .8s;
+}
+
+[delay120] {
+  transition: all $animSpeed ease 1.2s;
+}
+
+
+@keyframes toRight {
+  0% {
+    transform: translateX(-101%)
+  }
+
+  49%,
+  51% {
+    transform: translateX(0)
+  }
+
+  to {
+    transform: translateX(101%)
+  }
+}
+
+@keyframes zoomIN {
+  0% {
+    opacity: 0;
+    transform: scale(1.6)
+  }
+
+  26% {
+    opacity: 0
+  }
+
+  37% {
+    opacity: 1
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1)
+  }
+}
+
+
+@keyframes backgroundZoom {
+  from {
+    transform: scale(1)
+  }
+
+  to {
+    transform: scale(1.3)
+  }
+}
+
+// @keyframes zoom {
+//   from {
+//     transform: scale(1)
+//   }
+
+//   to {
+//     transform: scale(1.2)
+//   }
+// }
+
+
+// @keyframes btnAnim {
+//   0% {
+//     width: 0;
+//     opacity: 0;
+//   }
+
+//   50% {
+//     width: 100%;
+//     opacity: 1;
+//   }
+
+//   100% {
+//     width: 0;
+//     opacity: 0;
+//   }
+// }
+
+@keyframes btnAnim {
+  0% {
+    transform: translateX(-101%)
+  }
+
+  50% {
+    transform: translateX(0);
+
+  }
+
+  100% {
+    transform: translateX(101%)
+  }
+}
+
+@keyframes btnAnimBlue {
+  0% {
+
+    transform: translateX(-101%)
+  }
+
+  50% {
+
+    transform: translateX(0);
+
+  }
+
+  100% {
+    transform: translateX(101%);
+  }
+}
+
+@keyframes btnAnimBorder {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+
+  50% {
+    width: 100%;
+    opacity: 1;
+  }
+
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+
+
+@keyframes shring-animation {
+  0% {
+    background-position: 0 0;
+    opacity: 0;
+    width: 0;
+  }
+
+  1% {
+    background-position: 0 0;
+    opacity: 1;
+    border-right: 1px solid orange;
+  }
+
+  50% {
+    background-position: 150px 0;
+    opacity: 1;
+    border-right: 1px solid orange;
+  }
+
+  100% {
+    background-position: 400px 0;
+    opacity: 1;
+    border-right: 1px solid orange;
+  }
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+
+  1%,
+  99% {
+    border-right: 1px solid orange;
+  }
+
+  100% {
+    border-right: none;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
+
+
+@keyframes animated-text {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+// @keyframes animated-cursor {
+// //   from {
+// //     border-right-color: rgba(0, 255, 0, .75);
+// //   }
+
+// //   to {
+// //     border-right-color: transparent;
+// //   }
+// // }

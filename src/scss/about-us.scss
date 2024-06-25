@@ -1,0 +1,77 @@
+.about-us {
+  @include adaptiveValue("margin-top", -66, -51);
+  // @include adaptiveValue("margin-top", -66, -127);
+  @include adaptiveValue("font-size", 40, 30);
+
+  @media (max-width: em(400)){
+      margin-top: rem(-100);
+  }
+
+  /* .about-us__container-big */
+  &__container_big {}
+
+  /* .about-us__title */
+  &__title {
+    @include adaptiveValue("margin-bottom", 18, 15);
+
+    @include adaptiveValue("font-size", 40, 30);
+  }
+
+  /* .about-us__row */
+  &__row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    @media (max-width:$tablet) {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: rem(4);
+    }
+
+    @media (max-width: em(680)) {
+      grid-template-columns: auto;
+    }
+  }
+
+  /* .about-us__column */
+  &__column {
+    display: flex;
+    @include adaptiveValue("padding-top", 117, 20);
+    @include adaptiveValue("padding-left", 70, 10);
+    @include adaptiveValue("padding-right", 60, 10);
+    // @include adaptiveValue("height", 272, 82);
+    @include adaptiveValue("padding-bottom", 89, 20);
+    background: linear-gradient(270deg, #272B30 0%, rgba(39, 43, 48, 0.39) 100%);
+
+    @media (max-width:$tablet) {
+      // justify-content: center;
+
+      &:last-child {
+        // grid-column: 2 span;
+      }
+    }
+
+    p {
+      position: relative;
+      padding-left: rem(43);
+
+      font-size: rem(18);
+      font-weight: 400;
+      line-height: 120%;
+
+      @media (max-width:$mobile) {
+        font-size: rem(16);
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: rem(-6);
+        background: url('@img/icons/circle-star.svg') 0 0 no-repeat;
+        width: rem(28);
+        height: rem(28);
+      }
+    }
+
+  }
+}
