@@ -80,8 +80,10 @@
   /* .intro__title */
   &__title {
     @include adaptiveValue("margin-bottom", 53, 18);
+    display: flex;
+    // align-items: center;
 
-    @include adaptiveValue("font-size", 100, 30);
+    @include adaptiveValue("font-size", 70, 30);
     color: #FFF;
     font-weight: 900;
     line-height: 120%;
