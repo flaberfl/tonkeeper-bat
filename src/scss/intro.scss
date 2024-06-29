@@ -75,25 +75,12 @@
   /* .intro__title */
   &__title {
     @include adaptiveValue("margin-bottom", 53, 18);
-    display: flex;
-    // align-items: center;
 
     @include adaptiveValue("font-size", 70, 30);
     color: #FFF;
     font-weight: 900;
     line-height: 120%;
-    /* 120px */
     text-transform: uppercase;
-
-    span {
-      display: flex;
-      align-items: center;
-      @include adaptiveValue("margin-bottom", -2, -18);
-
-      svg {
-        @include adaptiveValue("width", 72, 22);
-      }
-    }
   }
 
   /* .intro__adress */
@@ -117,8 +104,6 @@
     position: absolute;
     right: rem(-200);
     top: 0;
-
-
 
     @media (max-width:$mobile) {
       top: rem(8);
