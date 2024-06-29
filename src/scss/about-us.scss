@@ -58,6 +58,11 @@
       font-weight: 400;
       line-height: 120%;
 
+      a {
+        text-decoration: underline;
+        font-weight: 500;
+      }
+
       @media (max-width:$mobile) {
         font-size: rem(16);
       }
