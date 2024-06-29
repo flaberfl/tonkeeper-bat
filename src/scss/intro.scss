@@ -1,7 +1,7 @@
 .intro {
   position: relative;
   @include adaptiveValue("padding-top", 130, 8);
-  @include adaptiveValue("padding-bottom", 172, 72);
+  @include adaptiveValue("padding-bottom", 220, 52);
 
   &::before {
     content: '';
