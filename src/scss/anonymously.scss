@@ -3,10 +3,11 @@
   background-size: cover;
   background-position: top right;
   @include adaptiveValue("padding-bottom", 125, 0);
+  @include adaptiveValue("padding-top", 120, 60);
 
-  @media (max-width: em(1300)) {
-    @include adaptiveValue("padding-top", 50, 74);
-  }
+  // @media (max-width: em(1300)) {
+  //   @include adaptiveValue("padding-top", 50, 74);
+  // }
 
   @media (min-width:$mobile) and (max-width:$tablet) {
     @include adaptiveValue("padding-bottom", 30, 86);
