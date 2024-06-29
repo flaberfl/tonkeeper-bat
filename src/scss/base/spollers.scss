@@ -91,4 +91,11 @@
 		padding-left: rem(37);
 		padding-right: rem(20);
 	}
+
+	p {
+		&:not(:last-child) {
+			margin-bottom: rem(15);
+			display: block;
+		}
+	}
 }

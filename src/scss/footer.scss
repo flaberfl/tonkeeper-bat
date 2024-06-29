@@ -21,14 +21,7 @@
      }
    }
 
-   &__image {
-     position: absolute;
-     @include adaptiveValue("left", 330, -80);
-     bottom: 0;
 
-     @include adaptiveValue("width", 540, 280);
-     z-index: 10;
-   }
 
    &__policy {
      position: relative;
@@ -54,21 +47,7 @@
      font-weight: 500;
    }
 
-   &__logo {
-     display: flex;
-     align-items: center;
-     gap: rem(20);
 
-     font-size: rem(12);
-     letter-spacing: 0.6px;
-     color: #00F0FF;
-
-     .quiz-form__footer & {
-       span {
-         display: none;
-       }
-     }
-   }
  }
 
  //====================================================================================================

@@ -52,7 +52,7 @@
   &__main-img {
     position: relative;
     z-index: 20;
-    @include adaptiveValue("width", 400, 200);
+    @include adaptiveValue("width", 360, 200);
 
     @media (max-width: em(1560)) {
       max-width: 100%;
@@ -91,7 +91,7 @@
 
   /* .equipment__subtitle */
   &__subtitle {
-    @include adaptiveValue("margin-bottom", 96, 31);
+    @include adaptiveValue("margin-bottom", 56, 31);
 
     text-align: left;
 
