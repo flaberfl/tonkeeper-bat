@@ -99,6 +99,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: rem(30);
 
   @media (max-width: em(1200)) {
     &:nth-child(1) {
@@ -304,7 +305,6 @@
     @include adaptiveValue("font-size", 18, 14);
     text-align: center;
     line-height: 120%;
-
   }
 
   /* .item-how-work__name */
@@ -323,6 +323,7 @@
   /* .item-how-work__text */
   &__text {
     max-width: rem(280);
+    margin-top: rem(-20);
 
     @media (max-width:$mobileSmall) {
       max-width: rem(150);
