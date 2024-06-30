@@ -15,15 +15,9 @@
 
        text-align: center;
      }
-
-     @media (max-width:$mobileSmall) {
-       align-items: flex-end;
-     }
    }
 
-
-
-   &__policy {
+   &__link {
      position: relative;
      z-index: 20;
      font-size: rem(14);
@@ -34,6 +28,7 @@
      @media (any-hover: hover) {
        &:hover {
          text-decoration: underline;
+         color: $hoverColor;
        }
      }
    }
@@ -46,7 +41,6 @@
      line-height: 120%;
      font-weight: 500;
    }
-
 
  }
 
