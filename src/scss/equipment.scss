@@ -10,7 +10,6 @@
   &::before {
     content: '';
     position: absolute;
-    // background: url('@img/equipment-bg2.jpg');
     background: url('@img/intro-keep.png');
     background-size: cover;
     background-repeat: no-repeat;
@@ -19,6 +18,7 @@
     transform: scale(-1, 1);
     mix-blend-mode: darken;
     z-index: -1;
+    opacity: .4;
   }
 
   /* .equipment__container */

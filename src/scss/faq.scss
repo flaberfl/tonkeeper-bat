@@ -4,17 +4,21 @@
   @include adaptiveValue("padding-bottom", 154, 104);
   overflow: hidden;
 
+
   &::before {
-    content: "";
+    content: '';
     position: absolute;
-    // background: url('@img/faq-bg.jpg');
-    // background: url('@img/intro-keep.png');
+    // background: url('@img/intro-bg-dark.png');
+    background: url('@img/intro-keep.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top 0;
+    background-position: top center;
     inset: 0;
     mix-blend-mode: darken;
     z-index: -1;
+    opacity: .4;
+    // transform: scale(-1, 1);
+    transition: opacity 0.3s ease 0s;
   }
 
   /* .faq__container */
@@ -35,21 +39,22 @@
     position: absolute;
     top: 0;
 
-    &_img {
-      position: absolute;
-      // left: -16.7%;
-      // bottom: -45.3%;
-      left: rem(-239);
-      bottom: rem(-321);
-      background: url('@img/faq-img.png') 0 0 no-repeat;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
+    // &_img {
+    //   position: absolute;
+    //   // left: -16.7%;
+    //   // bottom: -45.3%;
+    //   left: rem(-239);
+    //   bottom: rem(-321);
+    //   background: url('@img/faq-img.png') 0 0 no-repeat;
+    //   mix-blend-mode: lighten;
+    //   width: 100%;
+    //   height: 100%;
+    //   z-index: -1;
 
-      @media (max-width: em(1100)) {
-        bottom: rem(-290);
-      }
-    }
+    //   @media (max-width: em(1100)) {
+    //     bottom: rem(-290);
+    //   }
+    // }
   }
 }
 

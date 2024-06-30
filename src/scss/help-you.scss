@@ -3,6 +3,7 @@
   // @include adaptiveValue("padding-bottom", 192, 70);
   background: linear-gradient(270deg, #272B30 0%, rgba(39, 43, 48, 0.39) 100%);
   overflow: hidden;
+  
 
   @media (max-width: em(380)) {
     gap: rem(42);

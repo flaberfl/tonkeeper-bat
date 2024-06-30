@@ -1,7 +1,7 @@
 .anonymously {
-  background: url('@img/anon/anon-bg.png'), linear-gradient(270deg, #272B30 0%, rgba(39, 43, 48, 0.39) 100%);
-  background-size: cover;
-  background-position: top right;
+  // background: url('@img/anon/anon-bg.png'), linear-gradient(270deg, #272B30 0%, rgba(39, 43, 48, 0.39) 100%);
+  // background-size: cover;
+  // background-position: top right;
   @include adaptiveValue("padding-bottom", 125, 0);
   @include adaptiveValue("padding-top", 120, 60);
 
@@ -161,7 +161,7 @@
     &_2 {
       left: -20%;
       top: 65%;
-      @include adaptiveValue("width", 445, 216);
+      @include adaptiveValue("width", 350, 150);
 
       @media (max-width:$mobile) {
         left: -1%;
