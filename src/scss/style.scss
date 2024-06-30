@@ -12,7 +12,7 @@ $fontSize: rem(18);
 $mainColor: #ABABAB;
 $titleColor: #FFF;
 $bodyColor: #1C2024;
-$hoverColor: #00F0FF;
+$hoverColor: #45AEF5;
 $animSpeed: 0.8s;
 $aninDelay: 0s;
 $transition: 1s cubic-bezier(.05, .5, 0, 1);
@@ -164,22 +164,13 @@ body {
 
 @import 'common';
 
-// @import "animation";
 
-// Подключение стилей отдельных блоков
 @import "header";
 @import "intro";
 @import "about-us";
-@import "devices";
-@import "equipment";
-@import "anonymously";
+@import "what-is";
 @import "how-work";
-@import "help-you";
+@import "principle";
+@import "refund";
 @import "faq";
-@import "feedback";
-@import "contacts";
-
-@import "quiz-form";
 @import "footer";
-
-// Подключение стилей отдельных страниц

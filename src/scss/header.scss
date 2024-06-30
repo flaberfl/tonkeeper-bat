@@ -1,8 +1,6 @@
-//========================================================================================================================================================
-
 .header {
-	@include adaptiveValue("padding-top", 55, 16);
-	@include adaptiveValue("padding-bottom", 55, 16);
+	@include adaptiveValue("padding-top", 45, 16);
+	@include adaptiveValue("padding-bottom", 45, 16);
 	position: fixed;
 	width: 100%;
 	left: 0;
@@ -20,11 +18,8 @@
 
 	&._header-bg {
 		background-color: $bodyColor;
+		background-color: rgba($color: #1C2024, $alpha: .8);
 		padding: rem(10) 0;
-
-		@media (min-width:$tablet) {
-			backdrop-filter: blur(rem(3));
-		}
 	}
 
 	&._hide {
@@ -33,68 +28,6 @@
 		}
 
 		opacity: 0;
-	}
-
-	&__logo {
-	}
-
-	&__contacts {
-		display: grid;
-		row-gap: rem(5);
-		text-align: right;
-
-		@media (max-width:$tablet) {
-			justify-items: center;
-			margin-right: 13%;
-			// grid-auto-flow: column;
-		}
-
-		@media (max-width: em(640)) {
-			margin-right: 0;
-			row-gap: rem(15);
-		}
-	}
-
-	&__whatsapp {
-		transition: all 0.3s ease 0s;
-
-		svg {
-			path {
-				transition: all 0.3s ease .0s;
-			}
-		}
-
-		&:hover {
-			color: #43d854;
-
-			svg {
-				path {
-					fill: #43d854;
-				}
-			}
-		}
-	}
-
-	&__label {
-		font-size: rem(10);
-		font-weight: 600;
-		letter-spacing: rem(.5);
-		line-height: math.div(12, 10);
-		text-transform: uppercase;
-		text-align: center;
-	}
-
-	&__whatsapp {
-		display: flex;
-		align-items: center;
-		justify-content: flex-end;
-		gap: rem(10);
-
-		font-size: rem(18);
-		font-weight: 500;
-		color: #A156BA;
-		letter-spacing: rem(.9);
-		text-transform: uppercase;
 	}
 }
 
@@ -157,9 +90,6 @@
 		}
 	}
 
-	/* .menu__item */
-	&__item {}
-
 	/* .menu__link */
 	&__link {
 		font-size: rem(10);
@@ -179,7 +109,6 @@
 		&:hover {
 			color: $hoverColor ;
 		}
-
 	}
 }
 

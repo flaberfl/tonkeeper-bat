@@ -181,13 +181,11 @@
   @media (min-width: em(768)) and (max-width: em(1200)) {
     &:nth-child(4) {
       grid-column-start: 3;
-      // justify-self: start;
     }
 
     &:nth-child(5) {
       grid-column-start: 1;
       grid-row-start: 2;
-      // justify-self: end;
     }
   }
 
