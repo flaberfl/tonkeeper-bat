@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <style bx:fonts="Montserrat">@import url(https://fonts.googleapis.com/css2?family=Montserrat%3Aital%2Cwght%400%2C100%3B0%2C200%3B0%2C300%3B0%2C400%3B0%2C500%3B0%2C600%3B0%2C700%3B0%2C800%3B0%2C900%3B1%2C100%3B1%2C200%3B1%2C300%3B1%2C400%3B1%2C500%3B1%2C600%3B1%2C700%3B1%2C800%3B1%2C900&amp;display=swap);</style>
+  </defs>
+  <g>
+    <path d="M 106.033 109.481 C 103.421 109.481 96.58 111.671 96.58 114.379 L 96.58 119.278 L 87.213 119.278 C 81.989 119.278 77.759 123.657 77.759 129.075 L 77.759 187.684 C 77.759 193.101 81.989 197.481 87.213 197.481 L 134.306 197.481 C 139.53 197.481 143.759 193.101 143.759 187.684 L 143.759 129.075 C 143.759 123.658 139.53 119.278 134.306 119.278 L 124.939 119.278 L 124.939 114.379 C 124.939 111.671 118.098 109.481 115.486 109.481 L 106.033 109.481 Z" fill="#45AEF5"/>
+    <text style="fill: rgb(255, 255, 255); font-family: Montserrat; font-size: 70px; font-weight: 900; white-space: pre;" x="81.991" y="198.261">А</text>
+  </g>
+</svg>

@@ -1,7 +1,7 @@
 .intro {
   position: relative;
   @include adaptiveValue("padding-top", 130, 8);
-@include adaptiveValue("padding-bottom", 220, 52);
+  @include adaptiveValue("padding-bottom", 220, 52);
 
   &::before {
     content: '';
@@ -67,6 +67,7 @@
     }
   }
 
+
   /* .intro__content */
   &__content {
     margin-top: rem(89);
@@ -75,12 +76,23 @@
   /* .intro__title */
   &__title {
     @include adaptiveValue("margin-bottom", 53, 18);
+    // display: flex;
+    // align-items: center;
 
     @include adaptiveValue("font-size", 70, 30);
     color: #FFF;
     font-weight: 900;
     line-height: 120%;
     text-transform: uppercase;
+
+    span {
+    display: block;
+    }
+
+    svg {
+      @include adaptiveValue("height", 70, 28);
+      @include adaptiveValue("width", 67, 30);
+    }
   }
 
   /* .intro__adress */
